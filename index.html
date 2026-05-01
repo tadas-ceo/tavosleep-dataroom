@@ -74,9 +74,9 @@ input[type=range]{flex:1;accent-color:var(--blue)}
 <div style="background:var(--bg2);border-left:3px solid var(--blue);padding:10px 16px;font-family:system-ui,sans-serif;font-size:11px;line-height:1.8;color:var(--text2);margin:0 0 0 0" id="changelog-bar">
   <span style="font-weight:600;color:var(--text);text-transform:uppercase;letter-spacing:.06em;font-size:10px">Apr 30, 2026 — What's new in this version</span>
   <span style="color:var(--text3);margin:0 6px">·</span>
-  <span><strong style="color:var(--text)">🚀 Launch Momentum tab (new):</strong> 29 days of daily data (Apr 1–29) · Three-phase before/after story · Revenue, ROAS, profit, spend, product breakdown, V2 Meta soft-launch performance · Returns context</span>
+  <span><strong style="color:var(--text)">🚀 Launch Momentum tab (new):</strong> 30 days of daily data (Apr 1–30) · Three-phase before/after story · Revenue, ROAS, profit, spend, product breakdown, V2 Meta soft-launch performance · Returns context</span>
   <span style="color:var(--text3);margin:0 6px">·</span>
-  <span><strong style="color:var(--text)">V2 traction:</strong> $1,572 Shopify V2 revenue in first 5 days · 3.08× Meta ROAS · ~$59 CPA · email list not yet deployed</span>
+  <span><strong style="color:var(--text)">V2 traction:</strong> $2,547 Shopify V2 revenue in first 7 days · email outreach began Apr 29 · email list now being deployed</span>
   <span style="color:var(--text3);margin:0 6px">·</span>
   <span><strong style="color:var(--text)">Warranty context:</strong> $745 in Lifetime Warranty purchases (V1→V2 upgrades) before V2 announcement — organic upgrade demand from existing base</span>
   <button onclick="document.getElementById('changelog-bar').style.display='none'" style="float:right;background:none;border:none;color:var(--text3);cursor:pointer;font-size:12px;padding:0 4px;line-height:1">✕</button>
@@ -105,15 +105,15 @@ input[type=range]{flex:1;accent-color:var(--blue)}
   <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--rl);padding:1.25rem 1.5rem;margin-bottom:1.25rem">
     <div style="font-size:11px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;font-family:system-ui,sans-serif">As of April 30, 2026</div>
     <div style="font-size:22px;font-weight:400;font-family:Georgia,serif;margin-bottom:6px">TAVO V2 pre-orders are live and gaining momentum. April closed with the best ROAS and profit week of the year.</div>
-    <div style="font-size:13px;color:var(--text2);line-height:1.85;font-family:system-ui,sans-serif">April was a tale of two halves. The first half was volatile — high spend, inconsistent ROAS, V1 returns pulling profit negative. On April 16 we refocused ad spend. ROAS jumped to 5.56× within days, spend dropped 62%, and profitable days became the norm. V2 pre-orders launched April 24 with zero meaningful ad budget — revenue is already building organically. The email list hasn't been touched yet. The business is capital-constrained, not demand-constrained.</div>
+    <div style="font-size:13px;color:var(--text2);line-height:1.85;font-family:system-ui,sans-serif">April was a tale of two halves. The first half was volatile — high spend, inconsistent ROAS, V1 returns pulling profit negative. On April 16 we refocused ad spend. ROAS jumped to 5.56× within days, spend dropped 62%, and profitable days became the norm. V2 pre-orders launched April 24 with zero meaningful ad budget — revenue is already building organically. Email outreach to existing customers began April 29. The business is capital-constrained, not demand-constrained.</div>
   </div>
 
   <!-- KPI STRIP -->
   <div class="mg" style="margin-bottom:1.25rem">
     <div class="mc"><div class="ml">Cash in bank</div><div class="mv" style="color:var(--rdk)">~$5K</div><div class="ms">Actively raising — this is why</div></div>
-    <div class="mc"><div class="ml">April revenue</div><div class="mv">$25.2K</div><div class="ms up">+50% vs March ($16.7K)</div></div>
+    <div class="mc"><div class="ml">April revenue</div><div class="mv">$26.4K</div><div class="ms up">+58% vs March ($16.7K)</div></div>
     <div class="mc"><div class="ml">April ROAS (blended)</div><div class="mv up">2.04×</div><div class="ms">Post-opt peak: 5.56× (Apr 19)</div></div>
-    <div class="mc"><div class="ml">V2 revenue (5 days)</div><div class="mv up">$1,572</div><div class="ms">Soft launch · email not yet sent</div></div>
+    <div class="mc"><div class="ml">V2 revenue (7 days)</div><div class="mv up">$2,547</div><div class="ms">Email outreach began Apr 29</div></div>
     <div class="mc"><div class="ml">Best profit day</div><div class="mv up">$716</div><div class="ms">Apr 27 · V2 launch week</div></div>
     <div class="mc"><div class="ml">Warranty attach rate</div><div class="mv up">16.9%</div><div class="ms">Was 2.0% a year ago (+333%)</div></div>
   </div>
@@ -3162,6 +3162,7 @@ function initMomentumCharts(){
     {d:'Apr 27',rev:1944,ord:9, aov:213,pft:716,  roas:3.55,spd:547, ret:0,  ph:3,note:'Best profit day'},
     {d:'Apr 28',rev:867, ord:8, aov:108,pft:-404, roas:1.34,spd:647, ret:753, ph:3,note:'V1 returns $753'},
     {d:'Apr 29',rev:863, ord:4, aov:216,pft:-467, roas:2.32,spd:371, ret:839, ph:3,note:'V1 returns $839'},
+    {d:'Apr 30',rev:1231,ord:5, aov:246,pft:64,   roas:1.69,spd:727, ret:0,   ph:3,note:'Month close'},
   ];
   const SH={
     1:{v1:472.67,v2:0,acc:152.05,wa:0},
@@ -3193,9 +3194,10 @@ function initMomentumCharts(){
     27:{v1:1695.81,v2:199,acc:24.69,wa:0},
     28:{v1:-503.76,v2:398,acc:150.43,wa:0},
     29:{v1:-608,v2:577.1,acc:0,wa:0},
+    30:{v1:0,v2:975.10,acc:56.95,wa:0},
   };
   const PC={1:'#888780',2:'#185FA5',3:'#3B6D11'};
-  const lbl=D.map((_,i)=>String(i+1));
+  const lbl=D.map(d=>d.d.replace('Apr ',''));
   const gc='rgba(128,128,128,0.1)';
   const tf={size:10};
   const tc='#888';
@@ -3203,31 +3205,30 @@ function initMomentumCharts(){
   new Chart(document.getElementById('mom_rev'),{type:'bar',data:{labels:lbl,datasets:[
     {label:'Revenue',data:D.map(d=>d.rev),backgroundColor:D.map(d=>PC[d.ph]),borderRadius:3,yAxisID:'y',order:2},
     {label:'ROAS',data:D.map(d=>d.roas),type:'line',borderColor:'#BA7517',backgroundColor:'transparent',borderWidth:2,pointRadius:2,pointBackgroundColor:'#BA7517',yAxisID:'y2',order:1,tension:0.3}
-  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>c.datasetIndex===0?' $'+c.raw.toLocaleString():' ROAS: '+c.raw.toFixed(2)+'×'}}},scales:{x:{grid:{display:false},ticks:{font:tf,color:tc,autoSkip:false,maxRotation:0}},y:{position:'left',grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>'$'+(v>=1000?(v/1000).toFixed(1)+'k':v)}},y2:{position:'right',grid:{display:false},min:0,max:7,ticks:{font:tf,color:'#BA7517',callback:v=>v+'×'}}}}});
+  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>c.datasetIndex===0?' $'+c.raw.toLocaleString():' ROAS: '+c.raw.toFixed(2)+'×'}}},scales:{x:{grid:{display:false},ticks:{font:tf,color:tc,maxRotation:45,autoSkip:false}},y:{position:'left',grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>'$'+(v>=1000?(v/1000).toFixed(1)+'k':v)}},y2:{position:'right',grid:{display:false},min:0,max:7,ticks:{font:tf,color:'#BA7517',callback:v=>v+'×'}}}}});
 
   new Chart(document.getElementById('mom_pft'),{type:'bar',data:{labels:lbl,datasets:[
     {label:'Net profit',data:D.map(d=>d.pft),backgroundColor:D.map(d=>d.pft>=0?'#3B6D11':'#A32D2D'),borderRadius:2,order:2},
     {label:'Returns',data:D.map(d=>d.ret>0?d.ret:null),backgroundColor:'#BA7517',borderRadius:2,order:1}
-  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>{const v=c.raw;if(v==null)return;return c.datasetIndex===1?' Returns: -$'+v.toLocaleString():(v>=0?' Profit: $'+v.toLocaleString():'Profit: -$'+Math.abs(v).toLocaleString());}}}},scales:{x:{grid:{display:false},ticks:{font:tf,color:tc,autoSkip:false,maxRotation:0}},y:{grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>(v<0?'-$':'$')+(Math.abs(v)>=1000?(Math.abs(v)/1000).toFixed(1)+'k':Math.abs(v))}}}}});
+  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>{const v=c.raw;if(v==null)return;return c.datasetIndex===1?' Returns: -$'+v.toLocaleString():(v>=0?' Profit: $'+v.toLocaleString():'Profit: -$'+Math.abs(v).toLocaleString());}}}},scales:{x:{grid:{display:false},ticks:{font:tf,color:tc,maxRotation:45,autoSkip:false}},y:{grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>(v<0?'-$':'$')+(Math.abs(v)>=1000?(Math.abs(v)/1000).toFixed(1)+'k':Math.abs(v))}}}}});
 
-  new Chart(document.getElementById('mom_spd'),{type:'bar',data:{labels:lbl,datasets:[{label:'Ad spend',data:D.map(d=>d.spd),backgroundColor:D.map(d=>PC[d.ph]),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:tf,color:tc,autoSkip:false,maxRotation:0}},y:{grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>'$'+(v>=1000?(v/1000).toFixed(1)+'k':v)}}}}});
+  new Chart(document.getElementById('mom_spd'),{type:'bar',data:{labels:lbl,datasets:[{label:'Ad spend',data:D.map(d=>d.spd),backgroundColor:D.map(d=>PC[d.ph]),borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:tf,color:tc,maxRotation:45,autoSkip:false}},y:{grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>'$'+(v>=1000?(v/1000).toFixed(1)+'k':v)}}}}});
 
   new Chart(document.getElementById('mom_prod'),{type:'bar',data:{labels:lbl,datasets:[
-    {label:'TAVO V1',data:lbl.map(l=>Math.round(SH[+l].v1*100)/100),backgroundColor:'#185FA5',borderRadius:2,stack:'s'},
-    {label:'TAVO V2',data:lbl.map(l=>Math.round(SH[+l].v2*100)/100),backgroundColor:'#3B6D11',borderRadius:2,stack:'s'},
-    {label:'Sleep accessories',data:lbl.map(l=>Math.round(SH[+l].acc*100)/100),backgroundColor:'#BA7517',borderRadius:2,stack:'s'},
-    {label:'Warranty / accessories',data:lbl.map(l=>Math.round(SH[+l].wa*100)/100),backgroundColor:'#534AB7',borderRadius:2,stack:'s'},
-  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>' '+c.dataset.label+': $'+Math.round(c.raw).toLocaleString()}}},scales:{x:{stacked:true,grid:{display:false},ticks:{font:tf,color:tc,autoSkip:false,maxRotation:0}},y:{stacked:true,grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>(v<0?'-$':'$')+(Math.abs(v)>=1000?(Math.abs(v)/1000).toFixed(1)+'k':Math.abs(v))}}}}});
+    {label:'TAVO V1',data:lbl.map((l,i)=>{const s=SH[i+1];return s?Math.round(s.v1*100)/100:0;}),backgroundColor:'#185FA5',borderRadius:2,stack:'s'},
+    {label:'TAVO V2',data:lbl.map((l,i)=>{const s=SH[i+1];return s?Math.round(s.v2*100)/100:0;}),backgroundColor:'#3B6D11',borderRadius:2,stack:'s'},
+    {label:'Sleep accessories',data:lbl.map((l,i)=>{const s=SH[i+1];return s?Math.round(s.acc*100)/100:0;}),backgroundColor:'#BA7517',borderRadius:2,stack:'s'},
+    {label:'Warranty / accessories',data:lbl.map((l,i)=>{const s=SH[i+1];return s?Math.round(s.wa*100)/100:0;}),backgroundColor:'#534AB7',borderRadius:2,stack:'s'},
+  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>' '+c.dataset.label+': $'+Math.round(c.raw).toLocaleString()}}},scales:{x:{stacked:true,grid:{display:false},ticks:{font:tf,color:tc,maxRotation:45,autoSkip:false}},y:{stacked:true,grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>(v<0?'-$':'$')+(Math.abs(v)>=1000?(Math.abs(v)/1000).toFixed(1)+'k':Math.abs(v))}}}}});
 
   const WARRANTY={2:93.1,8:93.1,10:93.1,12:93.1,18:93.1,19:93.1,20:93.1,22:93.1};
-  const V2REV={25:199,26:199,27:199,28:398,29:577.1};
+  const V2REV={25:199,26:199,27:199,28:398,29:577.1,30:975.10};
   const V2SP={26:15.2,27:115.65,28:181.39,29:83.33};
-  const v2lbl=D.map((_,i)=>String(i+1));
+  const v2lbl=lbl;
   new Chart(document.getElementById('mom_v2'),{type:'bar',data:{labels:v2lbl,datasets:[
-    {label:'V1 warranty upgrade',data:v2lbl.map(l=>WARRANTY[+l]||0),backgroundColor:'#534AB7',borderRadius:2,stack:'s'},
-    {label:'V2 revenue',data:v2lbl.map(l=>V2REV[+l]||0),backgroundColor:'#3B6D11',borderRadius:2,stack:'s'},
-    {label:'V2 Meta spend',data:v2lbl.map(l=>V2SP[+l]||0),type:'line',borderColor:'#185FA5',backgroundColor:'transparent',borderWidth:2,pointRadius:3,pointBackgroundColor:'#185FA5',tension:0.3,stack:undefined}
-  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>' '+c.dataset.label+': $'+Math.round(c.raw||0).toLocaleString()}}},scales:{x:{stacked:true,grid:{display:false},ticks:{font:tf,color:tc,autoSkip:false,maxRotation:0}},y:{stacked:true,grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>'$'+(v>=1000?(v/1000).toFixed(1)+'k':v)}}}}});
+    {label:'V1 warranty upgrade',data:v2lbl.map((l,i)=>WARRANTY[i+1]||0),backgroundColor:'#534AB7',borderRadius:2,stack:'s'},
+    {label:'V2 revenue',data:v2lbl.map((l,i)=>V2REV[i+1]||0),backgroundColor:'#3B6D11',borderRadius:2,stack:'s'},
+  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:(c)=>' '+c.dataset.label+': $'+Math.round(c.raw||0).toLocaleString()}}},scales:{x:{grid:{display:false},ticks:{font:tf,color:tc,maxRotation:45,autoSkip:false}},y:{grid:{color:gc},ticks:{font:tf,color:tc,callback:v=>'$'+(v>=1000?(v/1000).toFixed(1)+'k':v)}}}}});
 
   const tb=document.getElementById('mom_tbl');
   const PL={1:'P1',2:'P2',3:'P3'};
@@ -3243,7 +3244,7 @@ function initMomentumCharts(){
   });
 
   // Monthly totals + MoM rows
-  const APR26={rev:25158,ord:148,aov:168,pft:-863,roas:2.04,spd:12326,ret:6312};
+  const APR26={rev:26389,ord:153,aov:172,pft:-799,roas:2.02,spd:13053,ret:6312};
   const MAR26={rev:16723,ord:156,aov:105,pft:-8108,roas:1.07,spd:15565,ret:5060};
   function momPct(a,b,positiveGood){
     const diff=a-b;
@@ -3350,7 +3351,7 @@ function initMomentumCharts(){
       <span style="font-size:12px;font-weight:500;padding:4px 12px;border-radius:20px;background:#E6F1FB;color:var(--blue);border:0.5px solid rgba(24,95,165,0.3);font-family:system-ui,sans-serif">Apr 16 · ad optimization</span>
       <span style="font-size:12px;font-weight:500;padding:4px 12px;border-radius:20px;background:var(--glt);color:var(--green);border:0.5px solid var(--gbd);font-family:system-ui,sans-serif">Apr 24 · TAVO V2 pre-order launch</span>
     </div>
-    <div style="font-size:13px;color:var(--text2);line-height:1.85;font-family:system-ui,sans-serif">Ad spend dropped 62% post-optimization while ROAS climbed to 5.56×. V2 pre-orders launched 8 days later with no meaningful ad budget and the email list untouched — and already generating daily revenue. The data below shows the inflection in real time.</div>
+    <div style="font-size:13px;color:var(--text2);line-height:1.85;font-family:system-ui,sans-serif">Ad spend dropped 62% post-optimization while ROAS climbed to 5.56×. V2 pre-orders launched 8 days later with no meaningful ad budget — revenue built organically. Email outreach to existing customers began April 29. The data below shows the inflection in real time.</div>
   </div>
 
   <!-- PHASE CARDS -->
@@ -3376,14 +3377,14 @@ function initMomentumCharts(){
       <div style="border-top:0.5px solid var(--border);padding-top:8px;font-size:12px;font-family:system-ui,sans-serif;display:flex;justify-content:space-between;color:var(--text2)"><span>Profitable days</span><span style="font-weight:500;color:var(--green)">5 / 8</span></div>
     </div>
     <div class="card" style="border-top:3px solid var(--green);border-radius:0 0 var(--rl) var(--rl)">
-      <div style="font-size:10px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;font-family:system-ui,sans-serif">Phase 3 · Apr 24–29 · V2 launch</div>
+      <div style="font-size:10px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;font-family:system-ui,sans-serif">Phase 3 · Apr 24–30 · V2 launch</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">
-        <div><div class="ml">Revenue</div><div class="mv" style="font-size:18px">$5,463</div></div>
-        <div><div class="ml">Net profit</div><div class="mv up" style="font-size:18px">+$289</div></div>
-        <div><div class="ml">Avg ROAS</div><div class="mv" style="font-size:18px;color:var(--green)">2.24×</div></div>
-        <div><div class="ml">V2 revenue</div><div class="mv up" style="font-size:18px">$1,572</div></div>
+        <div><div class="ml">Revenue</div><div class="mv" style="font-size:18px">$6,694</div></div>
+        <div><div class="ml">Net profit</div><div class="mv up" style="font-size:18px">+$353</div></div>
+        <div><div class="ml">Avg ROAS</div><div class="mv" style="font-size:18px;color:var(--green)">2.14×</div></div>
+        <div><div class="ml">V2 revenue</div><div class="mv up" style="font-size:18px">$2,547</div></div>
       </div>
-      <div style="border-top:0.5px solid var(--border);padding-top:8px;font-size:12px;font-family:system-ui,sans-serif;display:flex;justify-content:space-between;color:var(--text2)"><span>Profit excl. V1 returns</span><span style="font-weight:500;color:var(--green)">+$1,881</span></div>
+      <div style="border-top:0.5px solid var(--border);padding-top:8px;font-size:12px;font-family:system-ui,sans-serif;display:flex;justify-content:space-between;color:var(--text2)"><span>Profit excl. V1 returns</span><span style="font-weight:500;color:var(--green)">+$1,945</span></div>
     </div>
   </div>
 
@@ -3437,7 +3438,7 @@ function initMomentumCharts(){
     <div class="cl">Revenue by product category — April 1–29 · Shopify</div>
     <div class="mg" style="margin-bottom:10px">
       <div class="mc"><div class="ml">TAVO V1 net</div><div class="mv">$13,629</div><div class="ms">incl. return offsets</div></div>
-      <div class="mc"><div class="ml">TAVO V2 (5 days)</div><div class="mv up">$1,572</div><div class="ms">Apr 25–29 · soft launch</div></div>
+      <div class="mc"><div class="ml">TAVO V2 (7 days)</div><div class="mv up">$2,547</div><div class="ms">Apr 24–30 · soft launch</div></div>
       <div class="mc"><div class="ml">V1→V2 warranty upgrades</div><div class="mv up">$745</div><div class="ms">8 purchase days before launch</div></div>
       <div class="mc"><div class="ml">Sleep accessories</div><div class="mv">$1,562</div><div class="ms">mouth tape + nasal strips</div></div>
     </div>
@@ -3457,7 +3458,7 @@ function initMomentumCharts(){
   <!-- V2 SOFT LAUNCH -->
   <div class="card" style="margin-top:1rem">
     <div class="cl">V2 Meta ads — soft launch (Apr 26–29)</div>
-    <div class="hl-box">Soft launch context: V2 pre-order launched Apr 24. Meta ads only started Apr 26–27. The email list has not yet been contacted about V2. Despite this, V2 is already generating daily revenue with a blended CPA of ~$59 on a $199 product — 3.08× ROAS before any meaningful push has been made.</div>
+    <div class="hl-box">Soft launch context: V2 pre-order launched Apr 24. Meta ads started Apr 26–27. Email outreach to existing customers began April 29 — the first wave is now in market. Despite minimal spend and a just-started email campaign, V2 generated $2,547 in its first 7 days. Apr 30 alone drove $975 across 4 orders with $0 in ad spend. The email-driven conversion spike is still ahead.</div>
     <div class="two">
       <div>
         <div style="font-size:11px;font-weight:500;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;font-family:system-ui,sans-serif">New customer prospecting · TAVO Open Testing</div>
@@ -3467,7 +3468,8 @@ function initMomentumCharts(){
             <tr><td>Apr 27</td><td>$77</td><td>1</td><td>$199</td><td>$77</td></tr>
             <tr><td>Apr 28</td><td>$157</td><td>1</td><td>$199</td><td>$157</td></tr>
             <tr><td>Apr 29</td><td>$62</td><td>3</td><td>$816</td><td class="up">$21</td></tr>
-            <tr class="hl"><td>Total</td><td>$296</td><td style="color:var(--green);font-weight:500">5</td><td style="color:var(--green);font-weight:500">$1,214</td><td style="color:var(--green);font-weight:500">~$59 avg</td></tr>
+            <tr><td>Apr 30</td><td>$0</td><td>4</td><td>$975</td><td class="up">organic</td></tr>
+            <tr class="hl"><td>Total</td><td>$296</td><td style="color:var(--green);font-weight:500">9</td><td style="color:var(--green);font-weight:500">$2,189</td><td style="color:var(--green);font-weight:500">~$33 avg</td></tr>
           </tbody>
         </table>
         <p class="note" style="margin-top:8px">$199 product · $59 avg CPA · profitable from day 1 · Apr 29 improving fast</p>
@@ -3485,23 +3487,22 @@ function initMomentumCharts(){
           </tbody>
         </table>
         <p class="note" style="margin-top:8px">Directing existing V1 buyers to pre-order V2. Email blast not yet sent — the major conversion catalyst still ahead.</p>
-        <div style="margin-top:10px;padding:10px 12px;background:var(--bg2);border-radius:var(--r);font-size:12px;line-height:1.6;font-family:system-ui,sans-serif;color:var(--text2)"><strong style="color:var(--text)">What hasn't fired yet:</strong> The existing customer email list has not been contacted about V2. When deployed, expect a significant conversion spike from warm buyers at near-zero incremental ad cost — the most capital-efficient channel available.</div>
+        <div style="margin-top:10px;padding:10px 12px;background:var(--bg2);border-radius:var(--r);font-size:12px;line-height:1.6;font-family:system-ui,sans-serif;color:var(--text2)"><strong style="color:var(--text)">Email outreach now live:</strong> Email outreach to existing customers began April 29. The full conversion response from the email list is still building — warm buyers who already trust the product, at near-zero incremental ad cost. This is the most capital-efficient channel available and is now active.</div>
       </div>
     </div>
     <div style="margin-top:1rem">
-      <div class="cl" style="margin-bottom:4px">V2 demand signal — warranty upgrades + V2 revenue vs Meta spend · April 1–29</div>
+      <div class="cl" style="margin-bottom:4px">V2 demand signal — warranty upgrades + V2 revenue · April 1–30</div>
       <p class="note" style="margin-bottom:8px">Warranty = V1 customers paying $93 to lock in a free V2 upgrade — organic pre-V2 demand before the launch was announced</p>
       <div class="leg">
         <span><span class="ld" style="background:#534AB7"></span>V1 warranty upgrade (V2 pre-signal)</span>
         <span><span class="ld" style="background:#3B6D11"></span>V2 Shopify revenue</span>
-        <span><span class="ld" style="background:#185FA5;height:2px;border-radius:0;margin-top:4px"></span>V2 Meta spend (line)</span>
       </div>
       <div class="cw" style="height:200px"><canvas id="mom_v2"></canvas></div>
     </div>
   </div>
 
   <div class="warn-box" style="margin-top:1rem">
-    <strong>Returns context:</strong> $6,312 across 9 days in April (Apr 1, 3, 7, 10, 15, 22, 23, 28, 29). 80% stem from V1 chip connectivity and vibration failures — the exact defect TAVO V2 was engineered to eliminate. Returns are the primary driver of loss days throughout the month. V2 pre-orders show $0 returns to date.
+    <strong>Returns context:</strong> $6,312 across 9 days in April (Apr 1, 3, 7, 10, 15, 22, 23, 28, 29). 80% stem from V1 chip connectivity and vibration failures — the exact defect TAVO V2 was engineered to eliminate. Returns are the primary driver of loss days throughout the month. Apr 30 shows $0 returns. V2 pre-orders show $0 returns to date.
   </div>
 
   <!-- FULL DAILY TABLE -->
