@@ -84,6 +84,7 @@ input[type=range]{flex:1;accent-color:var(--blue)}
 
 <div class="nav">
   <button class="nb" onclick="T('today',this)">📍 Today</button>
+  <button class="nb" onclick="T('momentum',this)">🚀 Launch Momentum</button>
   <button class="nb active" onclick="T('overview',this)">Overview</button>
   <button class="nb" onclick="T('pnl',this)">P&amp;L</button>
   <button class="nb" onclick="T('growth',this)">Growth</button>
@@ -95,7 +96,6 @@ input[type=range]{flex:1;accent-color:var(--blue)}
   <button class="nb" onclick="T('insights',this)">Customer insights</button>
   <button class="nb" onclick="T('forecast',this)">Forecast</button>
   <button class="nb" onclick="T('raise',this)">The ask</button>
-  <button class="nb" onclick="T('momentum',this)">🚀 Launch Momentum</button>
 </div>
 
 <!-- TODAY -->
@@ -103,95 +103,79 @@ input[type=range]{flex:1;accent-color:var(--blue)}
 
   <!-- HERO -->
   <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--rl);padding:1.25rem 1.5rem;margin-bottom:1.25rem">
-    <div style="font-size:11px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;font-family:system-ui,sans-serif">As of April 24, 2026</div>
-    <div style="font-size:22px;font-weight:400;font-family:Georgia,serif;margin-bottom:6px">TAVO is live, selling, and launching V2 pre-orders this week.</div>
-    <div style="font-size:13px;color:var(--text2);line-height:1.85;font-family:system-ui,sans-serif">April has been an ad optimization month. ROAS recovered to 4.0× in the last 5 days after a deliberate spend pullback earlier in the month. The business is capital-constrained right now — not demand-constrained. Revenue picks up immediately when ad spend is deployed.</div>
+    <div style="font-size:11px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;font-family:system-ui,sans-serif">As of April 30, 2026</div>
+    <div style="font-size:22px;font-weight:400;font-family:Georgia,serif;margin-bottom:6px">TAVO V2 pre-orders are live and gaining momentum. April closed with the best ROAS and profit week of the year.</div>
+    <div style="font-size:13px;color:var(--text2);line-height:1.85;font-family:system-ui,sans-serif">April was a tale of two halves. The first half was volatile — high spend, inconsistent ROAS, V1 returns pulling profit negative. On April 16 we refocused ad spend. ROAS jumped to 5.56× within days, spend dropped 62%, and profitable days became the norm. V2 pre-orders launched April 24 with zero meaningful ad budget — revenue is already building organically. The email list hasn't been touched yet. The business is capital-constrained, not demand-constrained.</div>
   </div>
 
   <!-- KPI STRIP -->
   <div class="mg" style="margin-bottom:1.25rem">
-    <div class="mc"><div class="ml">Cash in bank</div><div class="mv" style="color:var(--amber)">~$10K</div><div class="ms">Actively raising — this is why</div></div>
-    <div class="mc"><div class="ml">Last 30d revenue</div><div class="mv">$22.7K</div><div class="ms">Net sales Mar 23 – Apr 23</div></div>
-    <div class="mc"><div class="ml">Last 7d revenue</div><div class="mv">$3.1K</div><div class="ms">Optimization month — improving</div></div>
-    <div class="mc"><div class="ml">Active subscribers</div><div class="mv up">77</div><div class="ms">$31/mo avg · $2,389 MRR</div></div>
-    <div class="mc"><div class="ml">5-day ROAS</div><div class="mv up">4.0×</div><div class="ms">Recovering from ad pause</div></div>
+    <div class="mc"><div class="ml">Cash in bank</div><div class="mv" style="color:var(--rdk)">~$5K</div><div class="ms">Actively raising — this is why</div></div>
+    <div class="mc"><div class="ml">April revenue</div><div class="mv">$25.2K</div><div class="ms up">+50% vs March ($16.7K)</div></div>
+    <div class="mc"><div class="ml">April ROAS (blended)</div><div class="mv up">2.04×</div><div class="ms">Post-opt peak: 5.56× (Apr 19)</div></div>
+    <div class="mc"><div class="ml">V2 revenue (5 days)</div><div class="mv up">$1,572</div><div class="ms">Soft launch · email not yet sent</div></div>
+    <div class="mc"><div class="ml">Best profit day</div><div class="mv up">$716</div><div class="ms">Apr 27 · V2 launch week</div></div>
     <div class="mc"><div class="ml">Warranty attach rate</div><div class="mv up">16.9%</div><div class="ms">Was 2.0% a year ago (+333%)</div></div>
   </div>
 
   <!-- IMMEDIATE CASH NEEDS -->
   <div class="card" style="margin-bottom:1.25rem;border:0.5px solid var(--amber);background:linear-gradient(135deg,var(--bg2) 0%,rgba(186,117,23,0.06) 100%)">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
-      <div class="cl" style="margin-bottom:0;color:var(--amber)">Why low volume is the core constraint — and what it costs to fix it</div>
+      <div class="cl" style="margin-bottom:0;color:var(--amber)">The capital need — simple version</div>
     </div>
-    <p class="note" style="margin-bottom:16px;line-height:1.7">Low order volume has reduced cash flow to a bare minimum. This is not a demand problem — ROAS is running at 4×, customers are buying, and pre-order intent is strong. The constraint is capital to produce inventory. <strong style="color:var(--text)">Volume is what unlocks sustainable profit:</strong> at 800 units sold, gross profit covers opex and ad spend with margin to spare. Without inventory, there is nothing to sell.</p>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px">
-      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:12px 14px">
-        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">V2 mold — one-time</div>
-        <div style="font-size:22px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$3,000</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px">Injection mold · amortised across all batches</div>
+    <p class="note" style="margin-bottom:18px;line-height:1.7">ROAS is working (peaked at 5.56× this month). Customers are buying. V2 pre-orders are live. The only thing missing is inventory to sell and capital to produce it. Here's exactly what we need and what it returns.</p>
+
+    <!-- Simple 3-step flow -->
+    <div style="display:grid;grid-template-columns:1fr 24px 1fr 24px 1fr;gap:0;align-items:center;margin-bottom:18px;font-family:system-ui,sans-serif">
+      <div style="background:var(--bg);border:0.5px solid var(--amber);border-radius:var(--r);padding:14px 16px;text-align:center">
+        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px">We spend</div>
+        <div style="font-size:28px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$67K</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:6px;line-height:1.6">Mold $3K · Batch 1 $20K<br>Marketing $29K · Eng $15K</div>
       </div>
-      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:12px 14px">
-        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Batch 1 production</div>
-        <div style="font-size:22px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$20,000</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px">800 units × $25 COGS · launches the revenue engine</div>
+      <div style="text-align:center;font-size:20px;color:var(--text3)">→</div>
+      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:14px 16px;text-align:center">
+        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px">800 units sell at 3× ROAS</div>
+        <div style="font-size:28px;font-weight:300;color:var(--text);font-family:Georgia,serif">$159K</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:6px;line-height:1.6">800 units × $199 pre-order<br>87% gross margin</div>
       </div>
-      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:12px 14px">
-        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Pre-order marketing — 800 orders</div>
-        <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:4px">
-          <div>
-            <div style="font-size:10px;color:var(--text3);margin-bottom:2px">4× ROAS (target)</div>
-            <div style="font-size:20px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$29,850</div>
-          </div>
-          <div style="color:var(--text3);font-size:14px">→</div>
-          <div>
-            <div style="font-size:10px;color:var(--text3);margin-bottom:2px">3× ROAS (scale floor)</div>
-            <div style="font-size:20px;font-weight:300;color:var(--text2);font-family:Georgia,serif">$53,067</div>
-          </div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);margin-top:2px">Both scenarios self-liquidating · returns $159,200 revenue</div>
-      </div>
-      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:12px 14px">
-        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Engineering — Day 1</div>
-        <div style="font-size:22px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$15,000</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px">App + firmware · required at launch · cannot defer</div>
-      </div>
-      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:12px 14px">
-        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Deferred vendor payments</div>
-        <div style="font-size:22px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$5,000</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px">Outstanding obligations due at launch</div>
-      </div>
-      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:12px 14px">
-        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">IP — first office action</div>
-        <div style="font-size:22px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$2,000</div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px">Patent prosecution fees · protects the product</div>
+      <div style="text-align:center;font-size:20px;color:var(--text3)">→</div>
+      <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--r);padding:14px 16px;text-align:center">
+        <div style="font-size:10px;color:var(--green);text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px">We return</div>
+        <div style="font-size:28px;font-weight:300;color:var(--green);font-family:Georgia,serif">+$92K</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:6px;line-height:1.6">Surplus after all costs<br>Fully self-liquidating</div>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-      <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--r);padding:12px 16px">
-        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Total immediate need</div>
-        <div style="display:flex;align-items:baseline;gap:8px">
-          <div>
-            <div style="font-size:10px;color:var(--text3)">4× ROAS</div>
-            <div style="font-size:22px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$74,850</div>
-          </div>
-          <div style="color:var(--text3)">·</div>
-          <div>
-            <div style="font-size:10px;color:var(--text3)">3× ROAS</div>
-            <div style="font-size:22px;font-weight:300;color:var(--text2);font-family:Georgia,serif">$98,067</div>
-          </div>
-        </div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px">Mold + Batch 1 + marketing + engineering + vendors + IP</div>
+
+    <!-- Line item breakdown - compact -->
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:14px">
+      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:10px 12px;text-align:center">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:4px">V2 mold</div>
+        <div style="font-size:18px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$3K</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:2px">one-time</div>
       </div>
-      <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--r);padding:12px 16px">
-        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Pre-order revenue return</div>
-        <div style="font-size:26px;font-weight:300;color:var(--green);font-family:Georgia,serif">$159,200</div>
-        <div style="display:flex;gap:12px;margin-top:4px;font-size:10px;color:var(--text3)">
-          <span>4× → <strong style="color:var(--green)">$84,350</strong> surplus</span>
-          <span>3× → <strong style="color:var(--green)">$61,133</strong> surplus</span>
-        </div>
+      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:10px 12px;text-align:center">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:4px">Batch 1 (800 units)</div>
+        <div style="font-size:18px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$20K</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:2px">$25/unit COGS</div>
+      </div>
+      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:10px 12px;text-align:center">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:4px">Marketing</div>
+        <div style="font-size:18px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$29K</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:2px">3× ROAS target</div>
+      </div>
+      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:10px 12px;text-align:center">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:4px">Engineering</div>
+        <div style="font-size:18px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$15K</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:2px">app + firmware</div>
+      </div>
+      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r);padding:10px 12px;text-align:center">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:4px">Vendors + IP</div>
+        <div style="font-size:18px;font-weight:300;color:var(--amber);font-family:Georgia,serif">$7K</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:2px">deferred + patent</div>
       </div>
     </div>
-    <p class="note" style="margin-top:10px;color:var(--amber)">Pre-order revenue covers the full outlay at both ROAS levels — fully self-liquidating within weeks of launch. At 4× ROAS total outlay is $74,850, leaving $84,350 surplus. At 3× ROAS (conservative scale assumption) outlay rises to $98,067, leaving $61,133 surplus. The model works at both. Every dollar spent returns between $1.62 and $2.13.</p>
+
+    <p class="note" style="color:var(--amber);margin-top:0">3× ROAS is the conservative floor — April peaked at 5.56× and averaged 2.94× post-optimization even while soft-launching V2. The model self-liquidates at 3× and generates meaningful surplus. Every dollar in returns between $1.37 and $2.38 depending on the day.</p>
   </div>
 
   <!-- WEEK BY WEEK + BURN -->
@@ -297,259 +281,6 @@ input[type=range]{flex:1;accent-color:var(--blue)}
     </div>
   </div>
 
-  <!-- CUSTOMER PROFILE -->
-  <div class="card" style="margin-bottom:1.25rem">
-    <div class="cl">Customer profile — who we thought vs who is actually buying</div>
-
-    <div class="two" style="margin-bottom:1.25rem">
-      <div style="background:var(--bg2);border-radius:var(--rl);padding:1rem;font-family:system-ui,sans-serif">
-        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px">Original hypothesis</div>
-        <div style="font-size:13px;color:var(--text2);line-height:1.8">Young tech-savvy professionals (22–32) who hate loud alarms. Biohackers and productivity optimisers who sleep next to a partner. Primary discovery channel: social media and fitness communities.</div>
-        <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:5px">
-          <span style="font-size:11px;background:var(--bg3);border-radius:10px;padding:2px 10px;color:var(--text2)">22–32 male</span>
-          <span style="font-size:11px;background:var(--bg3);border-radius:10px;padding:2px 10px;color:var(--text2)">Biohacker</span>
-          <span style="font-size:11px;background:var(--bg3);border-radius:10px;padding:2px 10px;color:var(--text2)">Social media discovery</span>
-        </div>
-      </div>
-      <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--rl);padding:1rem;font-family:system-ui,sans-serif">
-        <div style="font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px">Who is actually buying</div>
-        <div style="font-size:13px;color:var(--text2);line-height:1.8">25–44, 63% male — slightly older and more female than expected. Primarily finding TAVO via <strong style="color:var(--text)">Google search with high intent</strong>. A fast-growing cohort arrives via <strong style="color:var(--text)">AI assistants</strong> (ChatGPT, Grok) — 10% of 2026 survey respondents. Motivations are practical: snoring, disturbing a partner, waking up groggy.</div>
-        <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:5px">
-          <span style="font-size:11px;background:#EAF3DE;color:#27500A;border-radius:10px;padding:2px 10px">25–44 core (77%)</span>
-          <span style="font-size:11px;background:#EAF3DE;color:#27500A;border-radius:10px;padding:2px 10px">63% male</span>
-          <span style="font-size:11px;background:#EAF3DE;color:#27500A;border-radius:10px;padding:2px 10px">Google-intent driven</span>
-          <span style="font-size:11px;background:#EAF3DE;color:#27500A;border-radius:10px;padding:2px 10px">AI discovery emerging</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Demographics + Discovery side by side -->
-    <div class="two" style="margin-bottom:1rem">
-
-      <div>
-        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;font-family:system-ui,sans-serif">Purchases by age — Meta all-time (1,672 tracked)</div>
-        <div style="font-family:system-ui,sans-serif;display:flex;flex-direction:column;gap:5px">
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">18–24</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:18%;background:rgba(24,95,165,0.4);height:100%;border-radius:2px"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">132 (7.9%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">25–34</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:100%;background:var(--blue);height:100%;border-radius:2px"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">737 (44.1%) — largest segment</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">35–44</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:75%;background:var(--blue);height:100%;border-radius:2px"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">551 (33.0%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">45–54</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:25%;background:rgba(24,95,165,0.4);height:100%;border-radius:2px"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">188 (11.2%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">55–64</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:7%;background:rgba(24,95,165,0.3);height:100%;border-radius:2px"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">48 (2.9%)</div>
-            </div>
-          </div>
-
-        </div>
-        <p class="note" style="margin-top:8px">77% of all purchases come from the 25–44 band — broader than originally assumed.</p>
-      </div>
-
-      <div>
-        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;font-family:system-ui,sans-serif">How customers found TAVO — survey (n=553)</div>
-        <div style="font-family:system-ui,sans-serif;display:flex;flex-direction:column;gap:5px">
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">Google</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:100%;background:var(--green);height:100%;border-radius:2px;opacity:0.85"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">156 (31%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">Instagram</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:88%;background:var(--blue);height:100%;border-radius:2px;opacity:0.85"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">138 (27%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">Facebook</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:52%;background:var(--blue);height:100%;border-radius:2px;opacity:0.7"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">81 (16%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">Referred by friend</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:35%;background:var(--blue);height:100%;border-radius:2px;opacity:0.6"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">54 (11%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">TikTok</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:17%;background:var(--blue);height:100%;border-radius:2px;opacity:0.5"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">26 (5%)</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">ChatGPT / AI</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:8%;background:#8B5CF6;height:100%;border-radius:2px;opacity:0.9"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">13 (2.6%) — unpaid</div>
-            </div>
-          </div>
-
-        </div>
-        <div style="margin-top:8px;padding:7px 10px;background:var(--bg2);border-left:3px solid #8B5CF6;border-radius:var(--r);font-size:11px;color:var(--text2);font-family:system-ui,sans-serif">
-          <strong style="color:var(--text)">AI discovery (13 customers)</strong> — real verbatim: "ChatGPT introduced me to your product", "My partner did an AI search for me", "Research using Grok.com." Zero ad spend, zero SEO effort. Growing channel.
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Why they bought -->
-    <div style="border-top:0.5px solid var(--border);padding-top:1rem">
-      <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;font-family:system-ui,sans-serif">What they're actually buying it for — 89 open responses</div>
-      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px;font-family:system-ui,sans-serif">
-        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
-          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">22</div>
-          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Better sleep quality</div>
-          <div style="font-size:11px;color:var(--text3)">General wellness &amp; sleep improvement</div>
-        </div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
-          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">14</div>
-          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Wake up on time</div>
-          <div style="font-size:11px;color:var(--text3)">Stop oversleeping, get to work/school</div>
-        </div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
-          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">12</div>
-          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Wake up refreshed</div>
-          <div style="font-size:11px;color:var(--text3)">Not groggy, feeling energised</div>
-        </div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
-          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">6</div>
-          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Don't disturb others</div>
-          <div style="font-size:11px;color:var(--text3)">Partner, baby, roommate, family</div>
-        </div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
-          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">6</div>
-          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Silent alarm</div>
-          <div style="font-size:11px;color:var(--text3)">Replace phone alarm, different experience</div>
-        </div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
-          <div style="font-size:18px;font-weight:400;color:var(--green);margin-bottom:2px">13</div>
-          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">AI-discovered TAVO</div>
-          <div style="font-size:11px;color:var(--text3)">ChatGPT / Grok referral, zero ad spend</div>
-        </div>
-      </div>
-
-      <!-- Verbatim quotes -->
-      <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;font-family:system-ui,sans-serif">In their own words</div>
-      <div style="display:flex;flex-direction:column;gap:6px;font-family:system-ui,sans-serif">
-        <div style="background:var(--bg2);border-left:3px solid var(--blue);border-radius:var(--r);padding:8px 12px;font-size:12px;color:var(--text2);font-style:italic">"I have a 7-month-old that I keep waking with louder alarms. Really hope this works."</div>
-        <div style="background:var(--bg2);border-left:3px solid var(--blue);border-radius:var(--r);padding:8px 12px;font-size:12px;color:var(--text2);font-style:italic">"My family no longer annoyed with me about endless loud alarms or needing to wake me up."</div>
-        <div style="background:var(--bg2);border-left:3px solid var(--blue);border-radius:var(--r);padding:8px 12px;font-size:12px;color:var(--text2);font-style:italic">"Praying this works for my very hard to wake soon-to-be college freshman."</div>
-        <div style="background:var(--bg2);border-left:3px solid #8B5CF6;border-radius:var(--r);padding:8px 12px;font-size:12px;color:var(--text2);font-style:italic">"I was looking for products similar to the aXbo and ChatGPT introduced me to your product."</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- GEOGRAPHY -->
-  <div class="card" style="margin-bottom:1.25rem">
-    <div class="cl">Geographic concentration — last 30 days</div>
-    <div class="two">
-      <div>
-        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;font-family:system-ui,sans-serif">Top states by revenue</div>
-        <div style="font-family:system-ui,sans-serif;display:flex;flex-direction:column;gap:5px">
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">New York</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:100%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$3,222 · 12 orders</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">California</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:80%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$2,570 · 11 orders</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">Florida</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:48%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$1,543 · 10 orders</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">Washington</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:46%;background:var(--amber);height:100%;border-radius:2px;opacity:0.8"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$1,477 · 5 orders ← high AOV</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">Texas</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:36%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$1,149 · 8 orders</div>
-            </div>
-          </div>
-
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">Illinois</div>
-            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
-              <div style="width:33%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
-              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$1,064 · 10 orders</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:8px;font-family:system-ui,sans-serif">
-        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px">What the geography tells us</div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:10px 12px;font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Coastal concentration</strong> — NY, CA, FL, WA are the top four. Urban, health-conscious, above-average income demographics.</div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:10px 12px;font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Washington AOV outlier</strong> — 5 orders but $1,477 revenue ($295 AOV vs $160 average). High-value customer segment worth dedicated targeting.</div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:10px 12px;font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Midwest presence</strong> — Chicago leads city-level with 6 orders / $908. Strong signal for Midwest scaling with V2.</div>
-        <div style="background:var(--bg2);border-radius:var(--r);padding:10px 12px;font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Top city</strong> — Chicago, IL ($908) · Brooklyn, NY ($807) · Los Angeles, CA ($598)</div>
-      </div>
-    </div>
-  </div>
-
 </div>
 
 <!-- OVERVIEW -->
@@ -574,7 +305,7 @@ input[type=range]{flex:1;accent-color:var(--blue)}
     <div class="cw" style="height:290px"><canvas id="c_mrr" role="img" aria-label="MRR bar chart">Revenue peaked $84K Dec 2025, declined due to supplier disruption.</canvas></div>
   </div>
   <div class="ibox">
-    <div class="ititle">Why revenue declined in Q1 2026 — context for investors</div>
+    <div class="ititle">Why revenue declined in Q1 2026 — supplier disruption context</div>
     <div class="ibody">Revenue contraction in Jan–Mar 2026 was caused entirely by a supplier exit, not weakening demand. The disruption occurred precisely as the company was preparing to 4× purchase order volume. This period accelerated development of TAVO V2 with a new Hong Kong manufacturing partner, cutting COGS from $91.49 to $30 while delivering a significantly improved product. Lifetime warranty sales — a direct V2 pre-order proxy — spiked +400% in January 2026 when V2 upgrade eligibility was announced, confirming sustained customer demand through the transition.</div>
   </div>
   <div class="mg3">
@@ -1454,12 +1185,204 @@ input[type=range]{flex:1;accent-color:var(--blue)}
 
   </div>
 
+
+
+
+
+
 </div>
 
 <!-- CUSTOMER INSIGHTS -->
+
+
 <div id="tab-insights" class="sec">
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.25rem">
+  <!-- CUSTOMER PROFILE -->
+  <div class="card" style="margin-bottom:1.25rem">
+    <div class="cl">Customer profile — who we thought vs who is actually buying</div>
+
+    <div class="two" style="margin-bottom:1.25rem">
+      <div style="background:var(--bg2);border-radius:var(--rl);padding:1rem;font-family:system-ui,sans-serif">
+        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px">Original hypothesis</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.8">Young tech-savvy professionals (22–32) who hate loud alarms. Biohackers and productivity optimisers who sleep next to a partner. Primary discovery channel: social media and fitness communities.</div>
+        <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:11px;background:var(--bg3);border-radius:10px;padding:2px 10px;color:var(--text2)">22–32 male</span>
+          <span style="font-size:11px;background:var(--bg3);border-radius:10px;padding:2px 10px;color:var(--text2)">Biohacker</span>
+          <span style="font-size:11px;background:var(--bg3);border-radius:10px;padding:2px 10px;color:var(--text2)">Social media discovery</span>
+        </div>
+      </div>
+      <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--rl);padding:1rem;font-family:system-ui,sans-serif">
+        <div style="font-size:11px;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px">Who is actually buying</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.8">25–44, 63% male — slightly older and more female than expected. Primarily finding TAVO via <strong style="color:var(--text)">Google search with high intent</strong>. A fast-growing cohort arrives via <strong style="color:var(--text)">AI assistants</strong> (ChatGPT, Grok) — 10% of 2026 survey respondents. Motivations are practical: snoring, disturbing a partner, waking up groggy.</div>
+        <div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:5px">
+          <span style="font-size:11px;background:#EAF3DE;color:#27500A;border-radius:10px;padding:2px 10px">25–44 core (77%)</span>
+          <span style="font-size:11px;background:#EAF3DE;color:#27500A;border-radius:10px;padding:2px 10px">63% male</span>
+          <span style="font-size:11px;background:#EAF3DE;color:#27500A;border-radius:10px;padding:2px 10px">Google-intent driven</span>
+          <span style="font-size:11px;background:#EAF3DE;color:#27500A;border-radius:10px;padding:2px 10px">AI discovery emerging</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Demographics + Discovery side by side -->
+    <div class="two" style="margin-bottom:1rem">
+
+      <div>
+        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;font-family:system-ui,sans-serif">Purchases by age — Meta all-time (1,672 tracked)</div>
+        <div style="font-family:system-ui,sans-serif;display:flex;flex-direction:column;gap:5px">
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">18–24</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:18%;background:rgba(24,95,165,0.4);height:100%;border-radius:2px"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">132 (7.9%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">25–34</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:100%;background:var(--blue);height:100%;border-radius:2px"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">737 (44.1%) — largest segment</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">35–44</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:75%;background:var(--blue);height:100%;border-radius:2px"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">551 (33.0%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">45–54</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:25%;background:rgba(24,95,165,0.4);height:100%;border-radius:2px"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">188 (11.2%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:38px;font-size:11px;color:var(--text2);flex-shrink:0">55–64</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:7%;background:rgba(24,95,165,0.3);height:100%;border-radius:2px"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">48 (2.9%)</div>
+            </div>
+          </div>
+
+        </div>
+        <p class="note" style="margin-top:8px">77% of all purchases come from the 25–44 band — broader than originally assumed.</p>
+      </div>
+
+      <div>
+        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;font-family:system-ui,sans-serif">How customers found TAVO — survey (n=553)</div>
+        <div style="font-family:system-ui,sans-serif;display:flex;flex-direction:column;gap:5px">
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">Google</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:100%;background:var(--green);height:100%;border-radius:2px;opacity:0.85"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">156 (31%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">Instagram</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:88%;background:var(--blue);height:100%;border-radius:2px;opacity:0.85"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">138 (27%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">Facebook</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:52%;background:var(--blue);height:100%;border-radius:2px;opacity:0.7"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">81 (16%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">Referred by friend</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:35%;background:var(--blue);height:100%;border-radius:2px;opacity:0.6"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">54 (11%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">TikTok</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:17%;background:var(--blue);height:100%;border-radius:2px;opacity:0.5"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">26 (5%)</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:110px;font-size:11px;color:var(--text2);flex-shrink:0">ChatGPT / AI</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:8%;background:#8B5CF6;height:100%;border-radius:2px;opacity:0.9"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text2)">13 (2.6%) — unpaid</div>
+            </div>
+          </div>
+
+        </div>
+        <div style="margin-top:8px;padding:7px 10px;background:var(--bg2);border-left:3px solid #8B5CF6;border-radius:var(--r);font-size:11px;color:var(--text2);font-family:system-ui,sans-serif">
+          <strong style="color:var(--text)">AI discovery (13 customers)</strong> — real verbatim: "ChatGPT introduced me to your product", "My partner did an AI search for me", "Research using Grok.com." Zero ad spend, zero SEO effort. Growing channel.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Why they bought -->
+    <div style="border-top:0.5px solid var(--border);padding-top:1rem">
+      <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px;font-family:system-ui,sans-serif">What they're actually buying it for — 89 open responses</div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:12px;font-family:system-ui,sans-serif">
+        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
+          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">22</div>
+          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Better sleep quality</div>
+          <div style="font-size:11px;color:var(--text3)">General wellness &amp; sleep improvement</div>
+        </div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
+          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">14</div>
+          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Wake up on time</div>
+          <div style="font-size:11px;color:var(--text3)">Stop oversleeping, get to work/school</div>
+        </div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
+          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">12</div>
+          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Wake up refreshed</div>
+          <div style="font-size:11px;color:var(--text3)">Not groggy, feeling energised</div>
+        </div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
+          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">6</div>
+          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Don't disturb others</div>
+          <div style="font-size:11px;color:var(--text3)">Partner, baby, roommate, family</div>
+        </div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
+          <div style="font-size:18px;font-weight:400;color:var(--text);margin-bottom:2px">6</div>
+          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">Silent alarm</div>
+          <div style="font-size:11px;color:var(--text3)">Replace phone alarm, different experience</div>
+        </div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
+          <div style="font-size:18px;font-weight:400;color:var(--green);margin-bottom:2px">13</div>
+          <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px">AI-discovered TAVO</div>
+          <div style="font-size:11px;color:var(--text3)">ChatGPT / Grok referral, zero ad spend</div>
+        </div>
+      </div>
+
+      <!-- Verbatim quotes -->
+      <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;font-family:system-ui,sans-serif">In their own words</div>
+      <div style="display:flex;flex-direction:column;gap:6px;font-family:system-ui,sans-serif">
+        <div style="background:var(--bg2);border-left:3px solid var(--blue);border-radius:var(--r);padding:8px 12px;font-size:12px;color:var(--text2);font-style:italic">"I have a 7-month-old that I keep waking with louder alarms. Really hope this works."</div>
+        <div style="background:var(--bg2);border-left:3px solid var(--blue);border-radius:var(--r);padding:8px 12px;font-size:12px;color:var(--text2);font-style:italic">"My family no longer annoyed with me about endless loud alarms or needing to wake me up."</div>
+        <div style="background:var(--bg2);border-left:3px solid var(--blue);border-radius:var(--r);padding:8px 12px;font-size:12px;color:var(--text2);font-style:italic">"Praying this works for my very hard to wake soon-to-be college freshman."</div>
+        <div style="background:var(--bg2);border-left:3px solid #8B5CF6;border-radius:var(--r);padding:8px 12px;font-size:12px;color:var(--text2);font-style:italic">"I was looking for products similar to the aXbo and ChatGPT introduced me to your product."</div>
+      </div>
+    </div>
+
+  </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.25rem">
     <div style="background:var(--bg2);border-radius:var(--rl);padding:1.25rem;font-family:system-ui,sans-serif">
       <div style="font-size:11px;font-weight:500;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px">Before TAVO — 95 users surveyed</div>
       <div style="display:flex;flex-direction:column;gap:8px">
@@ -1589,7 +1512,80 @@ input[type=range]{flex:1;accent-color:var(--blue)}
     <div class="ibody">A clear theme across all four surveys: customers bought TAVO expecting Whoop or Fitbit-level sleep visualization. V1 delivered a reliable vibration alarm but not the data layer — creating a gap between the product promise and the delivered experience. V2 is the direct response. The redesigned app adds sleep cycle display, sleep score breakdown, and recurring alarms. Every top feature request is addressed. The customers who said "when it works it's awesome" are the most likely to upgrade immediately — they already believe in the product, they just want it fully realized.</div>
   </div>
 
+
+
+
+
+  <!-- GEOGRAPHY -->
+  <div class="card" style="margin-bottom:1.25rem">
+    <div class="cl">Geographic concentration — last 30 days</div>
+    <div class="two">
+      <div>
+        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px;font-family:system-ui,sans-serif">Top states by revenue</div>
+        <div style="font-family:system-ui,sans-serif;display:flex;flex-direction:column;gap:5px">
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">New York</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:100%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$3,222 · 12 orders</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">California</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:80%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$2,570 · 11 orders</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">Florida</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:48%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$1,543 · 10 orders</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">Washington</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:46%;background:var(--amber);height:100%;border-radius:2px;opacity:0.8"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$1,477 · 5 orders ← high AOV</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">Texas</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:36%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$1,149 · 8 orders</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <div style="width:90px;font-size:11px;color:var(--text2);flex-shrink:0">Illinois</div>
+            <div style="flex:1;background:var(--bg2);border-radius:2px;height:20px;position:relative">
+              <div style="width:33%;background:var(--blue);height:100%;border-radius:2px;opacity:0.8"></div>
+              <div style="position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:10px;color:#fff">$1,064 · 10 orders</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;font-family:system-ui,sans-serif">
+        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px">What the geography tells us</div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:10px 12px;font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Coastal concentration</strong> — NY, CA, FL, WA are the top four. Urban, health-conscious, above-average income demographics.</div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:10px 12px;font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Washington AOV outlier</strong> — 5 orders but $1,477 revenue ($295 AOV vs $160 average). High-value customer segment worth dedicated targeting.</div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:10px 12px;font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Midwest presence</strong> — Chicago leads city-level with 6 orders / $908. Strong signal for Midwest scaling with V2.</div>
+        <div style="background:var(--bg2);border-radius:var(--r);padding:10px 12px;font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Top city</strong> — Chicago, IL ($908) · Brooklyn, NY ($807) · Los Angeles, CA ($598)</div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
 
 <div id="tab-forecast" class="sec">
 <style>
@@ -1807,9 +1803,38 @@ input[type=range]{flex:1;accent-color:var(--blue)}
 <div id="tab-raise" class="sec">
 
   <!-- HERO -->
-  <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--rl);padding:1.25rem 1.5rem;margin-bottom:1.5rem">
+  <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--rl);padding:1.25rem 1.5rem;margin-bottom:1rem">
     <div style="font-size:24px;font-weight:400;color:var(--text);margin-bottom:6px;font-family:Georgia,serif">Raising $1,000,000 — in two tranches</div>
     <div style="font-size:13px;color:var(--text2);line-height:1.8;font-family:system-ui,sans-serif">TAVO Sleep is raising $1M structured as two tranches aligned to milestones. Tranche 1 funds the V2 transition and launch. Tranche 2 funds scale. Investors can participate in one or both. The instrument and valuation cap are open to discussion — terms are structured to be founder and investor-friendly at this stage.</div>
+  </div>
+
+  <!-- RAISE PROGRESS BAR -->
+  <div style="background:var(--bg2);border:0.5px solid var(--border2);border-radius:var(--rl);padding:1.25rem 1.5rem;margin-bottom:1.5rem;font-family:system-ui,sans-serif">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px">
+      <div>
+        <span style="font-size:11px;font-weight:500;color:var(--text3);text-transform:uppercase;letter-spacing:.08em">Tranche 1 raised so far</span>
+      </div>
+      <div style="text-align:right">
+        <span style="font-size:22px;font-weight:400;font-family:Georgia,serif;color:var(--green)">$37,000</span>
+        <span style="font-size:14px;color:var(--text3);margin-left:4px">of $350,000</span>
+      </div>
+    </div>
+    <!-- Track -->
+    <div style="width:100%;height:12px;background:var(--bg3);border-radius:6px;overflow:hidden;margin-bottom:10px">
+      <div style="width:10.6%;height:100%;background:linear-gradient(90deg,var(--green),#5BAD2A);border-radius:6px;transition:width .4s ease"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="display:flex;gap:16px">
+        <div><span style="font-size:12px;color:var(--green);font-weight:500">$37K committed</span> <span style="font-size:11px;color:var(--text3)">(10.6%)</span></div>
+        <div><span style="font-size:12px;color:var(--text2)">$313K remaining</span></div>
+      </div>
+      <div style="font-size:11px;color:var(--text3)">Target close: Q2 2026</div>
+    </div>
+    <div style="margin-top:12px;border-top:0.5px solid var(--border);padding-top:10px;display:flex;gap:20px">
+      <div style="font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Instrument:</strong> SAFE note</div>
+      <div style="font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Min. check:</strong> Open to discussion</div>
+      <div style="font-size:12px;color:var(--text2)"><strong style="color:var(--text)">Tranche 2:</strong> $650K post-launch milestone</div>
+    </div>
   </div>
 
   <!-- TWO TRANCHES SIDE BY SIDE -->
@@ -2070,7 +2095,6 @@ input[type=range]{flex:1;accent-color:var(--blue)}
 
 </div>
 
-</div>
 <script>
 const M=['May-24','Jun-24','Jul-24','Aug-24','Sep-24','Oct-24','Nov-24','Dec-24','Jan-25','Feb-25','Mar-25','Apr-25','May-25','Jun-25','Jul-25','Aug-25','Sep-25','Oct-25','Nov-25','Dec-25','Jan-26','Feb-26','Mar-26'];
 const REV=[3270,4830,9378,34759,23243,17743,9071,21938,5380,4625,26919,40652,44927,40899,72918,73454,78322,52878,55443,81913,60581,27336,16365];
