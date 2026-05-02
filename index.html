@@ -369,10 +369,296 @@ input[type=range]{flex:1;accent-color:var(--blue)}
 <!-- MARKETING -->
 <div id="tab-marketing" class="sec">
 
-  <!-- CHANNEL FUNNEL -->
+  <!-- ① HERO NARRATIVE -->
+  <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--rl);padding:1.25rem 1.5rem;margin-bottom:1.25rem">
+    <div style="font-size:11px;font-weight:500;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;font-family:system-ui,sans-serif">Marketing — 24-month summary</div>
+    <div style="font-size:20px;font-weight:400;font-family:Georgia,serif;margin-bottom:8px">ROAS held stable as spend scaled 8×. The channel works at scale.</div>
+    <div style="font-size:13px;color:var(--text2);line-height:1.85;font-family:system-ui,sans-serif">In July 2024, TAVO spent $4.5K on ads and earned 2.08× ROAS. By Q3–Q4 2025, monthly spend had scaled to $27K–$40K — and ROAS averaged 1.9×, nearly identical. Scaling spend 8× produced zero meaningful degradation in returns. The key risk of paid acquisition — that efficiency craters when you spend more — has not materialized. The business is capital-constrained, not demand-constrained.</div>
+  </div>
+
+  <!-- ② KPI STRIP -->
+  <div class="mg" style="margin-bottom:1.5rem">
+    <div class="mc"><div class="ml">Total ad spend (24 mo)</div><div class="mv">$453K</div><div class="ms">59% Meta · 41% Google</div></div>
+    <div class="mc"><div class="ml">Blended ROAS (24 mo)</div><div class="mv">1.77×</div><div class="ms">Peak at high spend: 2.12× (Jul-25)</div></div>
+    <div class="mc"><div class="ml">Best CAC month</div><div class="mv up">$98</div><div class="ms">Aug 2025 — 436 customers acquired</div></div>
+    <div class="mc"><div class="ml">CAC trajectory</div><div class="mv up">$248 → $98</div><div class="ms">May-24 to Aug-25 · 60% improvement</div></div>
+  </div>
+
+  <!-- ③ ROAS STABILITY AT SCALE — the key investor chart -->
   <div class="card" style="margin-bottom:1rem">
+    <div class="cl">ROAS vs. ad spend — the scalability proof</div>
+    <p class="note" style="margin-bottom:12px">Bars = total monthly ad spend (left axis). Line = blended ROAS (right axis). The highlighted band shows Jul–Dec 2025, when spend consistently ran $27K–$40K/month. ROAS did not fall — it averaged 1.9× across that period, nearly identical to performance at $4–5K/month spend in mid-2024. The channel has not hit an efficiency wall.</p>
+    <div class="leg" style="margin-bottom:8px">
+      <span><span class="ld" style="background:rgba(24,95,165,0.3)"></span>Ad spend (bars)</span>
+      <span><span class="ld" style="background:#3B6D11"></span>Blended ROAS (line)</span>
+      <span style="font-size:11px;color:var(--text3)">· shaded = high-spend zone ($27K–$40K/mo)</span>
+    </div>
+    <div class="cw" style="height:260px"><canvas id="c_roas_spend" role="img" aria-label="ROAS vs spend stability chart"></canvas></div>
+
+    <!-- call-out cards -->
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px">
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px;border-left:3px solid var(--blue)">
+        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Low spend (Jul-24)</div>
+        <div style="font-size:18px;font-weight:400;color:var(--text)">$4.5K/mo</div>
+        <div style="font-size:13px;color:var(--green);font-weight:500;margin-top:2px">2.08× ROAS</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px;border-left:3px solid var(--blue)">
+        <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">8× higher spend (Q3–Q4 2025)</div>
+        <div style="font-size:18px;font-weight:400;color:var(--text)">$27K–$40K/mo</div>
+        <div style="font-size:13px;color:var(--green);font-weight:500;margin-top:2px">1.86–2.12× ROAS</div>
+      </div>
+      <div style="background:var(--glt);border:0.5px solid var(--gbd);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">ROAS degradation at 8× spend</div>
+        <div style="font-size:18px;font-weight:400;color:var(--green)">~0%</div>
+        <div style="font-size:12px;color:var(--text2);margin-top:2px;line-height:1.5">Channel has not hit an efficiency ceiling</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ④ REVENUE + SPEND + CAC — stacked for correlation -->
+  <div class="card" style="margin-bottom:1rem">
+    <div class="cl">Revenue, ad spend and customer acquisition cost — 23 months</div>
+    <p class="note" style="margin-bottom:10px">Revenue grew faster than spend in the strongest quarters. CAC compressed from $248 in May-24 to $98 by Aug-25 as targeting improved and volume scaled.</p>
+
+    <div style="margin-bottom:6px">
+      <div style="font-size:11px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:4px">Monthly revenue</div>
+      <div style="height:130px"><canvas id="c_rev_mkt" role="img" aria-label="Monthly revenue"></canvas></div>
+    </div>
+
+    <div style="margin-bottom:6px;margin-top:14px">
+      <div style="font-size:11px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:4px">Ad spend by channel</div>
+      <div class="leg"><span><span class="ld" style="background:#185FA5"></span>Meta</span><span><span class="ld" style="background:#3B6D11"></span>Google</span></div>
+      <div style="height:130px"><canvas id="c_channel" role="img" aria-label="Channel spend"></canvas></div>
+    </div>
+
+    <div style="margin-top:14px">
+      <div style="font-size:11px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:4px">CAC trend — blended (LTV reference $208)</div>
+      <div class="leg"><span><span class="ld" style="background:#3B6D11"></span>Below LTV ($208)</span><span><span class="ld" style="background:#A32D2D"></span>Above LTV</span><span><span style="border-top:2px dashed #3B6D11;width:16px;display:inline-block"></span>LTV $208</span></div>
+      <div style="height:130px"><canvas id="c_cac" role="img" aria-label="CAC trend"></canvas></div>
+    </div>
+  </div>
+
+  <!-- ⑤ CHANNEL ROAS BY CHANNEL (kept, moved below) -->
+  <div class="card" style="margin-bottom:1rem">
+    <div class="cl">ROAS by channel — Meta vs Google (23 months)</div>
+    <div class="leg"><span><span class="ld" style="background:#185FA5"></span>Meta ROAS</span><span><span class="ld" style="background:#3B6D11"></span>Google ROAS</span><span style="font-size:11px;color:var(--text3)">dashed = 1× breakeven</span></div>
+    <div class="cw" style="height:180px"><canvas id="c_roas" role="img" aria-label="ROAS by channel"></canvas></div>
+    <p class="note" style="margin-top:10px">Meta ROAS is understated here — last-click attribution doesn't capture its assist role. See attribution section below for the corrected picture.</p>
+  </div>
+
+  <!-- ⑤b META ADS DEEP DIVE — 24-month account data -->
+  <div class="card" style="margin-bottom:1rem">
+    <div class="cl">Meta Ads — 24-month account breakdown (May 2024 – Apr 2026)</div>
+    <p class="note" style="margin-bottom:14px">Complete Meta Ads account data across all campaigns, ad sets, and audiences. $282K invested over 24 months reached 7.2M unique people with healthy frequency and a structured full-funnel architecture.</p>
+
+    <!-- 8-metric KPI grid -->
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:18px">
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Total spend</div>
+        <div style="font-size:18px;font-weight:600">$282K</div>
+        <div style="font-size:10px;color:var(--text3)">May 2024 – Apr 2026</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Unique reach</div>
+        <div style="font-size:18px;font-weight:600">7.2M</div>
+        <div style="font-size:10px;color:var(--text3)">17.1M impressions</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Avg frequency</div>
+        <div style="font-size:18px;font-weight:600">2.38×</div>
+        <div style="font-size:10px;color:var(--text3);color:#3B6D11">No audience fatigue</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Blended CTR</div>
+        <div style="font-size:18px;font-weight:600">0.74%</div>
+        <div style="font-size:10px;color:var(--text3)">Strong ad relevance</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Tracked purchases</div>
+        <div style="font-size:18px;font-weight:600">1,681</div>
+        <div style="font-size:10px;color:var(--text3)">Last-click Meta attr.</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Cost per purchase</div>
+        <div style="font-size:18px;font-weight:600">$167.91</div>
+        <div style="font-size:10px;color:var(--text3)">Last-click blended</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Cost per add-to-cart</div>
+        <div style="font-size:18px;font-weight:600">$43.60</div>
+        <div style="font-size:10px;color:var(--text3)">Healthy for $249 AOV</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:10px 14px">
+        <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Purchase ROAS</div>
+        <div style="font-size:18px;font-weight:600">1.52×</div>
+        <div style="font-size:10px;color:var(--text3)">Last-click only ↑ w/ multi-touch</div>
+      </div>
+    </div>
+
+    <!-- Monthly ROAS + Spend dual-axis chart -->
+    <div style="margin-bottom:18px">
+      <div style="font-size:12px;font-weight:600;color:var(--text2);margin-bottom:4px">Monthly spend vs. purchase ROAS — 23 months</div>
+      <div style="font-size:11px;color:var(--text3);margin-bottom:8px">Bars = monthly spend (left axis) · Line = Meta-reported purchase ROAS (right axis) · Gaps = attribution data unavailable that month</div>
+      <div class="cw" style="height:240px"><canvas id="c_meta_monthly" role="img" aria-label="Monthly Meta spend and purchase ROAS over 23 months"></canvas></div>
+      <p class="note" style="margin-top:6px">Purchase ROAS held in the <strong>1.70–2.23×</strong> band from July 2024 through the peak spend months of Aug–Dec 2025 ($15K–$23K/mo) — a near-identical range to the account's very first full months at $5K–$8K. Spend tripled; efficiency didn't drop.</p>
+    </div>
+
+    <!-- CPA trend + 3-phase table -->
+    <div class="two" style="margin-bottom:18px;align-items:start">
+      <div>
+        <div style="font-size:12px;font-weight:600;color:var(--text2);margin-bottom:4px">Cost per acquisition — monthly</div>
+        <div style="font-size:11px;color:var(--text3);margin-bottom:8px">Last-click Meta-attributed purchases</div>
+        <div class="cw" style="height:180px"><canvas id="c_meta_cpa" role="img" aria-label="Monthly Meta cost per acquisition"></canvas></div>
+        <p class="note" style="margin-top:6px">Once winner ads were identified and scaled (mid-2025), CPA compressed from early-test highs of $350–$438 down to <strong>$115–$183</strong> — all profitable against a $249 AOV at 87% gross margin on V2.</p>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;color:var(--text2);margin-bottom:8px">Three performance phases</div>
+        <table class="ft" style="width:100%">
+          <thead>
+            <tr><th>Period</th><th style="text-align:right">Avg spend/mo</th><th style="text-align:right">ROAS range</th><th style="text-align:right">Best CPA</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Jul–Sep 2024</strong><br><span style="font-size:10px;color:var(--text3)">Baseline established</span></td>
+              <td style="text-align:right">$13.5K</td>
+              <td style="text-align:right;color:#3B6D11;font-weight:600">1.52–2.23×</td>
+              <td style="text-align:right">$174</td>
+            </tr>
+            <tr>
+              <td><strong>Aug–Dec 2025</strong><br><span style="font-size:10px;color:var(--text3)">Scale phase — winners locked</span></td>
+              <td style="text-align:right">$17.6K</td>
+              <td style="text-align:right;color:#3B6D11;font-weight:600">1.84–2.18×</td>
+              <td style="text-align:right">$115</td>
+            </tr>
+            <tr>
+              <td><strong>Jan–Feb 2026</strong><br><span style="font-size:10px;color:var(--text3)">V2 launch — fresh demand</span></td>
+              <td style="text-align:right">$5.9K</td>
+              <td style="text-align:right;color:#3B6D11;font-weight:600">2.51–3.69×</td>
+              <td style="text-align:right">$156</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin-top:8px">Same ROAS window at 3× the budget. No efficiency cliff as spend scaled. V2 launch pushed ROAS to a new high — new product reset creative resonance.</p>
+
+        <!-- Peak ROAS callout -->
+        <div style="margin-top:12px;background:var(--glt);border-radius:var(--r);padding:10px 12px;border:0.5px solid var(--gbd)">
+          <div style="font-size:10px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">Peak: Feb 2026</div>
+          <div style="font-size:20px;font-weight:700;color:var(--green)">3.69× ROAS</div>
+          <div style="font-size:11px;color:var(--text2);margin-top:2px">$3.6K spend · $13.4K in tracked revenue · V2 launch demand</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 qualitative insight boxes -->
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+      <div style="background:var(--bg2);border-radius:var(--r);padding:12px 14px;border-left:3px solid #185FA5">
+        <div style="font-size:11px;font-weight:600;color:#185FA5;margin-bottom:5px">Winner ad stability</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.6">The "WINNERS OPEN - Static" format ran 26+ consecutive weeks (May–Nov 2025) with no creative fatigue — ROAS held 1.5–2.0× throughout as weekly spend grew. Winners don't burn out. "Static 2" launched Apr 2026 and hit 5.4× ROAS in its first active weeks.</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:12px 14px;border-left:3px solid #8B45E0">
+        <div style="font-size:11px;font-weight:600;color:#8B45E0;margin-bottom:5px">AI creative infrastructure</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.6">AI-generated ad creative launched in late March 2026. After ~6 weeks and $2.7K in test spend, it's tracking 1.0× Meta last-click ROAS — matching the account average out of the gate, before the algorithm optimizes. The goal is to lower cost-per-winner by generating and testing 10× more variants than human creative production allows.</div>
+      </div>
+      <div style="background:var(--bg2);border-radius:var(--r);padding:12px 14px;border-left:3px solid #3B6D11">
+        <div style="font-size:11px;font-weight:600;color:#3B6D11;margin-bottom:5px">Audience headroom</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.6">7.2M unique people reached over 24 months at only 2.38× average frequency. Tested professional verticals (lawyers, doctors, pilots, nurses, MBAs), 1%–10% lookalikes from buyers, lifestyle interest stacks, and creator partnerships. Frequency across all active segments stays 1.1–1.8× — well below the ~3× fatigue threshold.</div>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:12px">⚠️ The 1,681 purchases above are Meta's last-click count only. Triple Whale's blended attribution model shows Meta's true contribution is materially higher — see the attribution section below for the corrected picture.</p>
+  </div>
+
+  <!-- ⑥ ATTRIBUTION — why Meta matters more than it looks -->
+  <div class="ibox" style="margin-bottom:1rem">
+    <div class="ititle">Why last-click misleads — the multi-touch reality</div>
+    <div class="ibody">Last-click attribution credits the final click before purchase. A customer who first saw a Meta ad, then searched Google three days later, gets credited entirely to Google. Triple Whale's blended attribution model distributes credit across the full journey. The difference reveals which channel creates demand vs. which channel closes it — and both are essential for a healthy acquisition mix.</div>
+  </div>
+
+  <div class="two" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="cl">Attribution model comparison — last 12 months</div>
+      <div class="leg">
+        <span><span class="ld" style="background:#3B6D11"></span>Google</span>
+        <span><span class="ld" style="background:#185FA5"></span>Meta</span>
+      </div>
+      <div class="cw" style="height:220px"><canvas id="c_attr_models" role="img" aria-label="Attribution model comparison"></canvas></div>
+      <p class="note">Under last-click, Meta appears to generate $136K (0.81× ROAS). Under Triple Attribution, Meta's contribution rises to $235K — a 72% lift. Google also rises 33%.</p>
+    </div>
+    <div class="card">
+      <div class="cl">Meta lift — Last Click vs Triple Attribution</div>
+      <div style="font-size:12px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:10px">The gap between what Meta gets credit for vs. what it actually contributes.</div>
+      <div class="cw" style="height:150px"><canvas id="c_meta_lift" role="img" aria-label="Meta attribution lift"></canvas></div>
+      <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <div style="background:var(--bg2);border-radius:var(--r);padding:10px;font-family:system-ui,sans-serif;text-align:center">
+          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.04em">Last Click</div>
+          <div style="font-size:22px;font-weight:400;color:var(--rdk)">$136K</div>
+          <div style="font-size:11px;color:var(--text2)">0.81× ROAS</div>
+        </div>
+        <div style="background:var(--glt);border-radius:var(--r);padding:10px;font-family:system-ui,sans-serif;text-align:center;border:0.5px solid var(--gbd)">
+          <div style="font-size:10px;color:var(--green);text-transform:uppercase;letter-spacing:.04em">Triple Attribution</div>
+          <div style="font-size:22px;font-weight:400;color:var(--green)">$235K</div>
+          <div style="font-size:11px;color:var(--text2)">1.39× ROAS · +72% lift</div>
+        </div>
+      </div>
+      <p class="note">Cutting Meta based on last-click data alone would remove the demand-creation engine that feeds Google's closing efficiency.</p>
+    </div>
+  </div>
+
+  <!-- Channel strategy summary -->
+  <div class="ibox" style="margin-bottom:1rem">
+    <div class="ititle">Channel strategy — how the mix works together</div>
+    <div class="ibody">Google is the efficiency closer — it captures high-intent searches and converts at strong ROAS. Meta is the demand creation engine — its 72% lift in blended attribution confirms it generates the upstream interest that Google then closes. These channels are complementary, not competitive. At V2 launch, Klaviyo email to the 5,500-subscriber list is the highest-efficiency channel available — zero incremental cost, pre-warmed audience, 50.6% open rate.</div>
+  </div>
+
+  <!-- ⑦ CHANNEL DETAIL — first touch + journey + influence -->
+  <div class="two" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="cl">New customer first-touch source — all-time</div>
+      <div style="font-size:12px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:10px">Who introduced TAVO to new customers first — demand creation lens.</div>
+      <div class="cw" style="height:200px"><canvas id="c_firsttouch" role="img" aria-label="New customer first touch"></canvas></div>
+      <p class="note">Google introduced 1,474 new customers (48%), Meta introduced 729 (24%). Together they account for 72% of all new customer acquisition.</p>
+    </div>
+    <div class="card">
+      <div class="cl">Channel influence rate — all-time</div>
+      <div style="font-size:12px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:10px;line-height:1.6">% of converting customers who touched each channel at any point in their journey.</div>
+      <div class="cw" style="height:200px"><canvas id="c_influence" role="img" aria-label="Channel influence rate"></canvas></div>
+      <p class="note">Google touched 47% of all converters, Meta 23%. Together they appear in 70% of all buyer journeys.</p>
+    </div>
+  </div>
+
+  <div class="two" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="cl">Top customer journey paths — all-time</div>
+      <div style="font-size:12px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:10px;line-height:1.6">Most common sequences from first touch to purchase.</div>
+      <div id="journey_paths" style="font-family:system-ui,sans-serif"></div>
+      <p class="note">Single-touch Google (1,290 conversions) dominates, but Meta → Google and Google → Organic are common multi-step paths — Google closes, Meta and Organic open.</p>
+    </div>
+
+    <!-- ⑧ GOOGLE SUBCHANNEL — detail -->
+    <div class="card">
+      <div class="cl">Google breakdown — PMax vs Search vs Shopping</div>
+      <div class="cw" style="height:200px"><canvas id="c_google_sub" role="img" aria-label="Google subchannel revenue"></canvas></div>
+      <div style="margin-top:12px">
+        <table class="ft">
+          <thead><tr><th>Subchannel</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Role</th></tr></thead>
+          <tbody>
+            <tr><td style="font-weight:500">PMax</td><td>$94K</td><td>$208K</td><td class="warn">2.21×</td><td style="font-size:11px;color:var(--text2)">Highest volume, broad targeting</td></tr>
+            <tr class="hl"><td style="font-weight:500">Search</td><td>$33K</td><td>$92K</td><td class="up">2.80×</td><td style="font-size:11px;color:var(--text2)">Most efficient — captures intent</td></tr>
+            <tr><td style="font-weight:500">Shopping</td><td>$59K</td><td>$105K</td><td class="warn">1.79×</td><td style="font-size:11px;color:var(--text2)">Product discovery, mid-funnel</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin-top:8px">Google Search (2.80× ROAS) outperforms PMax (2.21×). Search captures high-intent branded queries; PMax operates more broadly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑨ CHANNEL FUNNEL — detail (moved to bottom) -->
+  <div class="card" style="margin-bottom:1rem;margin-top:0.5rem">
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:14px">
-      <div class="cl" style="margin-bottom:0">Channel funnel — sessions to purchases</div>
+      <div>
+        <div class="cl" style="margin-bottom:2px">Channel funnel — sessions to purchases</div>
+        <p class="note" style="margin-top:0">How each channel converts traffic through the purchase funnel — from session to checkout to order.</p>
+      </div>
       <div style="display:flex;gap:6px">
         <button class="sbtn active" id="funnel_24m" onclick="setFunnel('24m',this)">All-time (24 mo)</button>
         <button class="sbtn" onclick="setFunnel('12m',this)">Last 12 months</button>
@@ -383,16 +669,16 @@ input[type=range]{flex:1;accent-color:var(--blue)}
     <div id="funnel_insight" style="background:var(--bg2);border-radius:var(--r);padding:12px 16px;font-size:12px;color:var(--text2);line-height:1.75;margin-top:14px;border-left:3px solid var(--blue)"></div>
   </div>
 
-  <!-- SHOPIFY CONVERSION FUNNEL TREND -->
+  <!-- ⑩ SHOPIFY CONVERSION FUNNEL — most granular, at bottom -->
   <div class="card" style="margin-bottom:1rem">
     <div class="cl">Shopify conversion funnel — 25-month trend</div>
-    <p class="note" style="margin-bottom:12px">All three funnel rates tracked monthly from Shopify. CVR improved 4× from early 2024 lows (0.25%) to a 2025 peak of 1.53% — driven by improved ad targeting and higher-intent traffic mix. Apr 2026 dip reflects V1 supply pause.</p>
+    <p class="note" style="margin-bottom:12px">All three funnel rates tracked monthly from Shopify. CVR improved 4× from early 2024 lows (0.25%) to a 2025 peak of 1.53% — driven by improved ad targeting and higher-intent traffic mix.</p>
     <div class="leg">
       <span><span class="ld" style="background:#185FA5"></span>Add to cart %</span>
       <span><span class="ld" style="background:#3B6D11"></span>Reached checkout %</span>
       <span><span class="ld" style="background:#BA7517"></span>Conversion rate %</span>
     </div>
-    <div class="cw" style="height:240px"><canvas id="c_sfunnel" role="img" aria-label="Shopify conversion funnel trend"></canvas></div>
+    <div class="cw" style="height:220px"><canvas id="c_sfunnel" role="img" aria-label="Shopify conversion funnel trend"></canvas></div>
     <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px">
       <div style="background:var(--bg2);border-radius:var(--r);padding:8px 12px">
         <div style="font-size:10px;color:var(--text3);margin-bottom:2px">Avg ATC rate</div>
@@ -415,130 +701,6 @@ input[type=range]{flex:1;accent-color:var(--blue)}
         <div style="font-size:10px;color:var(--text3)">Oct 2025</div>
       </div>
     </div>
-  </div>
-  <div class="mg">
-    <div class="mc"><div class="ml">Total ad spend (24 mo)</div><div class="mv">$453K</div><div class="ms">59% Meta · 41% Google</div></div>
-    <div class="mc"><div class="ml">Blended CAC</div><div class="mv">$131</div><div class="ms">Improved from $248 (May 2024)</div></div>
-    <div class="mc"><div class="ml">Best CAC month</div><div class="mv up">$98</div><div class="ms">Aug 2025 — 436 customers</div></div>
-    <div class="mc"><div class="ml">Blended ROAS</div><div class="mv">1.77×</div><div class="ms">Best: 2.6× (Dec 2024)</div></div>
-  </div>
-
-  <!-- CAC / ROAS / SPEND — stacked vertically for correlation -->
-  <div class="card" style="margin-bottom:1rem">
-    <div class="cl">Revenue, spend, ROAS and CAC — same 23-month window</div>
-    <p class="note" style="margin-bottom:10px">Read top to bottom: revenue shows what was earned, spend shows what was invested, ROAS and CAC show the efficiency of that investment — per channel.</p>
-
-    <div style="margin-bottom:6px">
-      <div style="font-size:11px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:4px">Total monthly revenue</div>
-      <div style="height:140px"><canvas id="c_rev_mkt" role="img" aria-label="Monthly revenue"></canvas></div>
-    </div>
-
-    <div style="margin-bottom:6px;margin-top:12px">
-      <div style="font-size:11px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:4px">Ad spend by channel</div>
-      <div class="leg"><span><span class="ld" style="background:#185FA5"></span>Meta</span><span><span class="ld" style="background:#3B6D11"></span>Google</span></div>
-      <div style="height:140px"><canvas id="c_channel" role="img" aria-label="Channel spend"></canvas></div>
-    </div>
-
-    <div style="margin-bottom:6px;margin-top:12px">
-      <div style="font-size:11px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:4px">ROAS by channel — Meta vs Google</div>
-      <div class="leg"><span><span class="ld" style="background:#185FA5"></span>Meta ROAS</span><span><span class="ld" style="background:#3B6D11"></span>Google ROAS</span><span style="font-size:11px;color:var(--text3)">dashed = 1× breakeven</span></div>
-      <div style="height:140px"><canvas id="c_roas" role="img" aria-label="ROAS by channel"></canvas></div>
-    </div>
-
-    <div style="margin-top:12px">
-      <div style="font-size:11px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:4px">CAC trend — blended (LTV reference $208)</div>
-      <div class="leg"><span><span class="ld" style="background:#3B6D11"></span>Below LTV ($208)</span><span><span class="ld" style="background:#A32D2D"></span>Above LTV</span><span><span style="border-top:2px dashed #3B6D11;width:16px;display:inline-block"></span>LTV $208</span></div>
-      <div style="height:140px"><canvas id="c_cac" role="img" aria-label="CAC trend"></canvas></div>
-    </div>
-  </div>
-
-  <!-- ATTRIBUTION SECTION HEADER -->
-  <div class="ibox" style="margin-bottom:1rem">
-    <div class="ititle">Why last-click misleads — the multi-touch reality</div>
-    <div class="ibody">Last-click attribution makes Google look like the only channel that matters, because it captures the final click before purchase. But a customer who first saw a Meta ad, then searched Google three days later, is credited entirely to Google under last-click. Triple Whale's blended attribution model distributes credit across the full journey. The difference tells you which channel is closing vs. which is creating demand — and both matter for budget decisions.</div>
-  </div>
-
-  <!-- ATTRIBUTION MODEL COMPARISON -->
-  <div class="card" style="margin-bottom:1rem">
-    <div class="cl">Attribution model comparison — same revenue, three lenses (last 12 months)</div>
-    <div class="leg">
-      <span><span class="ld" style="background:#3B6D11"></span>Google</span>
-      <span><span class="ld" style="background:#185FA5"></span>Meta</span>
-    </div>
-    <div class="cw" style="height:260px"><canvas id="c_attr_models" role="img" aria-label="Attribution model comparison"></canvas></div>
-    <p class="note">Store revenue same period: $694K. Under last-click, Meta appears to generate only $136K (0.81× ROAS). Under Triple Attribution, Meta's contribution rises to $235K (+72%). Google also rises +33% — but Meta's relative lift is larger, confirming it does proportionally more assist work.</p>
-  </div>
-
-  <!-- CHANNEL INFLUENCE + JOURNEY PATHS -->
-  <div class="two" style="margin-bottom:1rem">
-    <div class="card">
-      <div class="cl">Channel influence rate — all-time</div>
-      <div style="font-size:12px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:10px;line-height:1.6">% of all converting customers who touched each channel <em>at any point</em> in their journey — regardless of first or last click.</div>
-      <div class="cw" style="height:220px"><canvas id="c_influence" role="img" aria-label="Channel influence rate"></canvas></div>
-      <p class="note">Google touched 47% of all converting customers. Meta touched 23%. Together they appear in the journey of 70% of all buyers — but neither gets full credit under last-click alone.</p>
-    </div>
-    <div class="card">
-      <div class="cl">Top customer journey paths — all-time</div>
-      <div style="font-size:12px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:10px;line-height:1.6">Most common sequences from first touch to purchase. Single-channel paths show direct closers; multi-channel paths reveal assist structure.</div>
-      <div id="journey_paths" style="font-family:system-ui,sans-serif"></div>
-      <p class="note">Single-touch Google (1,290 conversions) dominates, but the next tier shows Meta → Google and Google → Organic/Social as common multi-step paths — Google is often the closer, Meta and Organic are often the opener.</p>
-    </div>
-  </div>
-
-  <!-- GOOGLE SUBCHANNEL -->
-  <div class="card" style="margin-bottom:1rem">
-    <div class="cl">Google breakdown — PMax vs Search vs Shopping (all-time, Triple Attribution)</div>
-    <div class="two">
-      <div class="cw" style="height:220px"><canvas id="c_google_sub" role="img" aria-label="Google subchannel revenue"></canvas></div>
-      <div>
-        <table class="ft">
-          <thead><tr><th>Subchannel</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Role</th></tr></thead>
-          <tbody>
-            <tr><td style="font-weight:500">PMax</td><td>$94K</td><td>$208K</td><td class="warn">2.21×</td><td style="font-size:11px;color:var(--text2)">Highest volume, broad targeting</td></tr>
-            <tr class="hl"><td style="font-weight:500">Search</td><td>$33K</td><td>$92K</td><td class="up">2.80×</td><td style="font-size:11px;color:var(--text2)">Most efficient — captures intent</td></tr>
-            <tr><td style="font-weight:500">Shopping</td><td>$59K</td><td>$105K</td><td class="warn">1.79×</td><td style="font-size:11px;color:var(--text2)">Product discovery, mid-funnel</td></tr>
-          </tbody>
-        </table>
-        <div class="ibox" style="margin-top:10px;margin-bottom:0">
-          <div class="ititle">PMax vs Search — efficiency gap</div>
-          <div class="ibody" style="font-size:11px">Google Search (2.80× ROAS) outperforms PMax (2.21× ROAS) on efficiency. Search captures high-intent branded and category queries; PMax operates more broadly, capturing some demand that Meta and Organic created. The channel mix is actively managed and the efficiency data informs allocation decisions going forward.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- NEW CUSTOMER FIRST TOUCH + META ASSIST -->
-  <div class="two" style="margin-bottom:1rem">
-    <div class="card">
-      <div class="cl">New customer first-touch source — all-time</div>
-      <div style="font-size:12px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:10px">Who introduced TAVO to new customers first — demand creation lens.</div>
-      <div class="cw" style="height:220px"><canvas id="c_firsttouch" role="img" aria-label="New customer first touch"></canvas></div>
-      <p class="note">Google introduced 1,474 new customers (48%), Meta introduced 729 (24%). Together they account for 72% of all new customer acquisition. Direct (14%) and Organic (11%) round out the mix.</p>
-    </div>
-    <div class="card">
-      <div class="cl">Meta lift — Last Click vs Triple Attribution</div>
-      <div style="font-size:12px;color:var(--text2);font-family:system-ui,sans-serif;margin-bottom:10px">The gap between what Meta gets credit for vs. what it actually contributes.</div>
-      <div class="cw" style="height:180px"><canvas id="c_meta_lift" role="img" aria-label="Meta attribution lift"></canvas></div>
-      <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px">
-        <div style="background:var(--bg2);border-radius:var(--r);padding:10px;font-family:system-ui,sans-serif;text-align:center">
-          <div style="font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.04em">Last Click</div>
-          <div style="font-size:22px;font-weight:400;color:var(--rdk)">$136K</div>
-          <div style="font-size:11px;color:var(--text2)">0.81× ROAS</div>
-        </div>
-        <div style="background:var(--glt);border-radius:var(--r);padding:10px;font-family:system-ui,sans-serif;text-align:center;border:0.5px solid var(--gbd)">
-          <div style="font-size:10px;color:var(--green);text-transform:uppercase;letter-spacing:.04em">Triple Attribution</div>
-          <div style="font-size:22px;font-weight:400;color:var(--green)">$235K</div>
-          <div style="font-size:11px;color:var(--text2)">1.39× ROAS · +72% lift</div>
-        </div>
-      </div>
-      <p class="note">Meta's true contribution is 72% higher than last-click suggests. Judging Meta on last-click alone and cutting budget would remove the demand-creation engine that feeds Google's closing efficiency.</p>
-    </div>
-  </div>
-
-  <!-- BUDGET FRAMEWORK -->
-  <div class="ibox">
-    <div class="ititle">Channel strategy — how the mix works together</div>
-    <div class="ibody">Google is the efficiency closer — it captures high-intent searches and converts at strong ROAS. Meta is the demand creation engine — its 72% lift in blended attribution confirms it generates the upstream interest that Google then closes. These channels are complementary, not competitive. At V2 launch, Klaviyo email to the 5,500-subscriber list is the highest-efficiency channel available — zero incremental cost, pre-warmed audience, 50.6% open rate.</div>
   </div>
 
 </div>
@@ -2165,6 +2327,51 @@ new Chart('c_mom',{type:'bar',
     }}
 });
 
+// ── ROAS + SPEND DUAL-AXIS — scalability proof ─────────────────────────────
+const TOTAL_SPEND=META.map((m,i)=>m+GOOG[i]);
+// Blended ROAS per month (0 if no spend)
+const ROAS_BL=TOTAL_SPEND.map((s,i)=>s>0?+(REV[i]/s).toFixed(2):null);
+// High-spend zone: Jul-25 to Dec-25 = indices 14–19
+const roasScaleAnnotPlugin={id:'rsap',afterDraw(c){
+  const ctx=c.ctx,meta0=c.getDatasetMeta(0);
+  if(!meta0.data[14]||!meta0.data[19])return;
+  const gap=meta0.data[1]?meta0.data[1].x-meta0.data[0].x:16;
+  const x0=meta0.data[14].x-gap/2,x1=meta0.data[19].x+gap/2;
+  const{top,bottom}=c.chartArea;
+  ctx.save();
+  ctx.fillStyle='rgba(59,109,17,0.08)';
+  ctx.fillRect(x0,top,x1-x0,bottom-top);
+  ctx.strokeStyle='rgba(59,109,17,0.25)';ctx.lineWidth=1;ctx.setLineDash([3,2]);
+  ctx.strokeRect(x0,top,x1-x0,bottom-top);ctx.setLineDash([]);
+  ctx.fillStyle='#3B6D11';ctx.font='bold 9.5px system-ui';ctx.textAlign='center';
+  ctx.fillText('Jul–Dec 2025 · $27K–$40K/mo spend · ROAS avg 1.9×',(x0+x1)/2,top+13);
+  ctx.restore();
+}};
+new Chart('c_roas_spend',{type:'bar',plugins:[roasScaleAnnotPlugin],
+  data:{labels:M,datasets:[
+    {label:'Ad spend',data:TOTAL_SPEND,backgroundColor:'rgba(24,95,165,0.22)',borderColor:'rgba(24,95,165,0.4)',borderWidth:1,borderRadius:2,yAxisID:'y',order:2},
+    {label:'Blended ROAS',data:ROAS_BL,type:'line',
+     borderColor:'#3B6D11',backgroundColor:'transparent',
+     pointRadius:ROAS_BL.map(r=>r!==null?4:0),
+     pointBackgroundColor:ROAS_BL.map(r=>r===null?'transparent':r>=2?'#3B6D11':r>=1.5?'#BA7517':'#A32D2D'),
+     pointBorderColor:'#fff',pointBorderWidth:1.5,
+     borderWidth:2.5,tension:0.35,yAxisID:'y2',order:1,spanGaps:false}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{
+        title:ctx=>M[ctx[0].dataIndex],
+        label:ctx=>ctx.dataset.label==='Blended ROAS'?'ROAS: '+(ctx.raw||'—')+'×':'Spend: '+F(ctx.raw)
+      }}},
+    scales:{
+      y:{position:'left',ticks:{callback:v=>F(v),font:{size:10}},grid:{color:'rgba(128,128,128,0.1)'},
+         title:{display:true,text:'Ad spend ($)',font:{size:10},color:'var(--text3)'}},
+      y2:{position:'right',ticks:{callback:v=>v+'×',font:{size:10}},grid:{display:false},min:0,max:4,
+          title:{display:true,text:'Blended ROAS',font:{size:10},color:'var(--text3)'}},
+      x:{ticks:{font:{size:10},autoSkip:true,maxRotation:45},grid:{display:false}}
+    }}
+});
+
 // Revenue chart for marketing tab
 new Chart('c_rev_mkt',{type:'bar',
   data:{labels:M,datasets:[{data:REV,backgroundColor:'rgba(24,95,165,0.75)',borderRadius:2}]},
@@ -2185,6 +2392,79 @@ const roasBreakPlugin={id:'roasBreak',afterDraw(c){
   ctx.moveTo(c.chartArea.left,y1);ctx.lineTo(c.chartArea.right,y1);
   ctx.stroke();ctx.setLineDash([]);ctx.restore();
 }};
+// ── META MONTHLY ROAS + SPEND dual-axis ─────────────────────────────────────
+const MM=['May-24','Jun-24','Jul-24','Aug-24','Sep-24','Oct-24','Nov-24','Dec-24',
+          'Feb-25','Mar-25','Apr-25','May-25','Jun-25','Jul-25','Aug-25','Sep-25',
+          'Oct-25','Nov-25','Dec-25','Jan-26','Feb-26','Mar-26','Apr-26'];
+const MM_SPEND=[4252,2499,7673,18467,14427,15886,12765,4514,
+                7007,14983,16299,12195,14673,19967,15467,18356,
+                15970,15378,22694,8245,3631,5268,11643];
+const MM_ROAS=[1.80,1.98,2.23,1.70,1.52,1.34,1.19,1.47,
+               0.96,1.03,0.45,null,null,1.29,2.18,1.78,
+               2.08,1.84,1.98,2.51,3.69,1.19,1.80];
+const MM_CPA=[354,179,174,190,229,86,297,226,
+              438,190,151,156,177,129,115,173,
+              165,183,171,156,191,null,259];
+
+const metaPhasePlugin={id:'metaPhase',beforeDraw(c){
+  const{ctx,chartArea:{left,right,top,bottom},scales:{x}}=c;
+  if(!x)return;
+  const bands=[
+    {from:0,to:2,color:'rgba(24,95,165,0.05)'},
+    {from:2,to:7,color:'rgba(59,109,17,0.05)'},
+    {from:7,to:13,color:'rgba(186,117,23,0.05)'},
+    {from:13,to:18,color:'rgba(59,109,17,0.07)'},
+    {from:19,to:21,color:'rgba(59,109,17,0.10)'}
+  ];
+  ctx.save();
+  bands.forEach(p=>{
+    const bw=x.width/MM.length;
+    const x0=Math.max(left,x.getPixelForValue(p.from)-bw/2);
+    const x1=Math.min(right,x.getPixelForValue(Math.min(p.to,MM.length-1))+bw/2);
+    ctx.fillStyle=p.color;ctx.fillRect(x0,top,x1-x0,bottom-top);
+  });
+  ctx.restore();
+}};
+
+new Chart('c_meta_monthly',{
+  plugins:[metaPhasePlugin],
+  data:{labels:MM,datasets:[
+    {type:'bar',label:'Monthly spend',data:MM_SPEND,
+     backgroundColor:'rgba(24,95,165,0.18)',borderColor:'rgba(24,95,165,0.4)',borderWidth:1,
+     borderRadius:2,yAxisID:'ySpend',order:2},
+    {type:'line',label:'Purchase ROAS',data:MM_ROAS,
+     borderColor:'#3B6D11',backgroundColor:'transparent',
+     pointRadius:MM_ROAS.map(v=>v===null?0:4),
+     pointBackgroundColor:MM_ROAS.map(v=>v===null?'transparent':v>=2?'#3B6D11':'#185FA5'),
+     pointBorderColor:MM_ROAS.map(v=>v===null?'transparent':v>=2?'#3B6D11':'#185FA5'),
+     borderWidth:2.5,tension:0.3,spanGaps:false,yAxisID:'yROAS',order:1}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},
+      tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+(ctx.dataset.yAxisID==='yROAS'?ctx.parsed.y+'×':'$'+Math.round(ctx.parsed.y/1000)+'K')}}},
+    scales:{
+      x:{ticks:{font:{size:9},maxRotation:50,autoSkip:false},grid:{display:false}},
+      ySpend:{position:'left',ticks:{callback:v=>'$'+Math.round(v/1000)+'K',font:{size:10}},grid:{color:'rgba(128,128,128,0.08)'}},
+      yROAS:{position:'right',min:0,max:4.5,ticks:{callback:v=>v.toFixed(1)+'×',font:{size:10}},grid:{display:false}}
+    }
+  }
+});
+
+new Chart('c_meta_cpa',{
+  data:{labels:MM,datasets:[{
+    type:'line',label:'Cost per purchase',data:MM_CPA,
+    borderColor:'#BA7517',backgroundColor:'rgba(186,117,23,0.08)',
+    pointRadius:MM_CPA.map(v=>v===null?0:3),pointBackgroundColor:'#BA7517',
+    borderWidth:2,tension:0.3,fill:true,spanGaps:false
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.parsed.y===null?'—':'$'+Math.round(ctx.parsed.y)+' CPA'}}},
+    scales:{
+      x:{ticks:{font:{size:9},maxRotation:50,autoSkip:false},grid:{display:false}},
+      y:{min:0,ticks:{callback:v=>'$'+v,font:{size:10}},grid:{color:'rgba(128,128,128,0.08)'}}
+    }
+  }
+});
 new Chart('c_roas',{type:'line',plugins:[roasBreakPlugin],
   data:{labels:M,datasets:[
     {label:'Meta ROAS',data:META_ROAS,borderColor:'#185FA5',backgroundColor:'transparent',
